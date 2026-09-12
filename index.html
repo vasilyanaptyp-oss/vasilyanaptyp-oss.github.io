@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Artur Vasilyan — websites for people who work with their hands</title>
-<meta name="description" content="Web designer and developer. I build a free homepage concept for small craft businesses across Europe and charge a flat 300 € only if they say yes. 20+ concepts in Latvia, Lithuania, Poland, Ukraine, Austria and Sweden.">
+<meta name="description" content="Web designer and developer. I build a free homepage concept for small craft businesses across Europe and charge a flat 300 € only if they say yes. 19 concepts in Latvia, Lithuania, Poland, Ukraine, Austria and Sweden.">
 <meta name="theme-color" content="#f4f1ea" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#141412" media="(prefers-color-scheme: dark)">
 <meta name="color-scheme" content="light dark">
@@ -20,8 +20,9 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap">
 <link rel="stylesheet" href="assets/css/style.css">
 <script>document.documentElement.classList.add('js');try{var t=localStorage.getItem('theme');if(t)document.documentElement.setAttribute('data-theme',t);}catch(e){}</script>
+<script src="assets/js/data.js"></script>
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Person","name":"Artur Vasilyan","jobTitle":"Web designer & developer","email":"mailto:vasilyanaptyp@gmail.com","url":"https://vasilyanaptyp-oss.github.io/","knowsLanguage":["uk","ru","en","lv","lt","et","pl","de","sv","fi","da","nl","fr"]}
+{"@context":"https://schema.org","@type":"Person","name":"Artur Vasilyan","jobTitle":"Web designer & developer","email":"mailto:vasilyanaptyp@gmail.com","url":"https://vasilyanaptyp-oss.github.io/","address":{"@type":"PostalAddress","addressLocality":"Kyiv","addressCountry":"UA"},"knowsLanguage":["uk","ru","en","lv","lt","et","pl","de","sv","fi","da","nl","fr"]}
 </script>
 </head>
 <body>
@@ -37,7 +38,10 @@
     <a href="#pricing">Pricing</a>
   </nav>
   <div class="hdr__act">
-    <button class="theme" id="themeBtn" type="button" aria-label="Switch to dark theme" title="Light / dark"><span class="theme__sun" aria-hidden="true"></span></button>
+    <button class="theme" id="themeBtn" type="button" aria-label="Switch to dark theme" title="Light / dark">
+      <svg class="theme__sun" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.6M12 18.9v2.6M2.5 12h2.6M18.9 12h2.6M5.3 5.3l1.8 1.8M16.9 16.9l1.8 1.8M5.3 18.7l1.8-1.8M16.9 7.1l1.8-1.8"/></svg>
+      <svg class="theme__moon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5Z"/></svg>
+    </button>
     <a class="btn btn--sm" href="mailto:vasilyanaptyp@gmail.com?subject=Website%20for%20my%20business">Email me</a>
   </div>
 </header>
@@ -47,19 +51,19 @@
 <!-- ===== HERO ===== -->
 <section class="hero">
   <div class="hero__copy">
-    <p class="eyebrow">Web designer &amp; developer · working across Europe</p>
-    <h1 class="hero__h"><span class="l"><span class="w">Websites</span></span> <span class="l"><span class="w">for</span></span> <span class="l"><span class="w">people</span></span> <span class="l"><span class="w">who</span></span> <span class="l"><span class="w">work</span></span> <span class="l"><span class="w">with</span></span> <span class="l"><em class="w">their</em></span> <span class="l"><em class="w">hands.</em></span></h1>
-    <p class="hero__sub" id="pitch" lang="en">Gates, kitchens, roofs, renovations, car workshops, truck washes. I find small craft businesses that are invisible online, build them a homepage concept for free, and charge a flat <b>300&nbsp;€</b> only if they say yes.</p>
-    <div class="langs" id="langs" aria-label="Read this pitch in"><span class="langs__l">Read this in</span></div>
+    <p class="eyebrow" id="eye">Web designer &amp; developer · working across Europe</p>
+    <h1 class="hero__h" id="h1">Websites for people who work with <em>their hands.</em></h1>
+    <p class="hero__sub" id="pitch" lang="en">Gates, kitchens, roofs, renovations, car workshops, truck washes. I find small craft businesses that are hard to find online, build them a free homepage concept — and you pay a flat <b>300&nbsp;€</b> only if you like the result.</p>
+    <div class="langs" id="langs" aria-label="Read this in another language"><span class="langs__l">Read this in</span></div>
     <div class="hero__cta">
-      <a class="btn" href="#work">See the work</a>
-      <a class="link" href="#before">How the old site looked →</a>
+      <a class="btn" id="cta1" href="#work">See the work</a>
+      <a class="link" id="cta2" href="#before">How the old site looked →</a>
     </div>
     <ul class="hero__facts" aria-label="Facts">
-      <li><b>20+</b><span>concepts since August&nbsp;2026</span></li>
+      <li><b>19</b><span>concepts built</span></li>
+      <li><b>1</b><span>live client site</span></li>
       <li><b>6</b><span>countries</span></li>
-      <li><b>12</b><span>languages I write in</span></li>
-      <li><b>300&nbsp;€</b><span>flat, no monthly fees</span></li>
+      <li><b>300&nbsp;€</b><span>once, no monthly fees</span></li>
     </ul>
   </div>
 
@@ -67,22 +71,39 @@
     <div class="wall__plane" id="wallPlane">
       <div class="wall__track" id="wallTrack"></div>
     </div>
-    <div class="wall__fade"></div>
   </div>
 </section>
+<script>
+/* Language of the first screen, decided before first paint so nothing jumps. Click handlers come from main.js. */
+(function(){var P=window.PITCH||{};var keys=Object.keys(P);if(!keys.length)return;
+var saved=null;try{saved=localStorage.getItem('pitchLang')}catch(e){}
+var nav=(navigator.language||'en').slice(0,2).toLowerCase();
+var code=saved&&P[saved]?saved:(P[nav]?nav:'en');
+var langs=document.getElementById('langs');
+keys.forEach(function(k){var b=document.createElement('button');b.type='button';b.dataset.lang=k;b.textContent=k.toUpperCase();b.title=P[k].name;b.setAttribute('aria-pressed',k===code?'true':'false');langs.appendChild(b);});
+window.applyPitch=function(k){var d=P[k];if(!d)return;var p=document.getElementById('pitch'),h=document.getElementById('h1');
+p.innerHTML=d.text;p.setAttribute('lang',k);h.innerHTML=d.h1.replace(/\*(.+?)\*/g,'<em>$1</em>');h.setAttribute('lang',k);
+document.getElementById('eye').textContent=d.eye;document.getElementById('cta1').textContent=d.cta1;document.getElementById('cta2').textContent=d.cta2;
+langs.querySelectorAll('button').forEach(function(b){b.setAttribute('aria-pressed',b.dataset.lang===k?'true':'false')});};
+if(code!=='en')window.applyPitch(code);})();
+</script>
 
-<!-- ===== GREETINGS TICKER ===== -->
-<div class="ticker" aria-hidden="true">
-  <div class="ticker__track" id="ticker"></div>
-</div>
+<!-- ===== OFFER IN ONE LINE ===== -->
+<section class="offer" aria-label="The offer in one line">
+  <div class="wrap offer__in">
+    <p><b>1.</b> I send you a free homepage concept on a live link.</p>
+    <p><b>2.</b> You like it → <b>300&nbsp;€</b> once, the site goes to your domain, all files are yours.</p>
+    <p><b>3.</b> You don’t → nothing to pay. I take the concept down if you ask.</p>
+  </div>
+</section>
 
 <!-- ===== WORK ===== -->
 <section class="work" id="work">
   <div class="wrap">
     <div class="sec__head">
-      <p class="eyebrow">Selected work</p>
-      <h2>Every one of these started as a cold email and a free concept.</h2>
-      <p class="lead">Real businesses, their real photos and phone numbers, in their own language. Tap a card to open the live page.</p>
+      <p class="eyebrow">Work</p>
+      <h2>One client already lives with the new site. Eighteen more got a concept they never asked for.</h2>
+      <p class="lead">That is how the free step works. The first card is a live client site. The rest are concepts built from each company’s public materials, not commissioned by them. Tap a card to open the page.</p>
     </div>
     <div class="grid" id="grid"></div>
     <p class="more" id="more"></p>
@@ -115,7 +136,7 @@
       <li><span>01</span><h3>I find you</h3><p>Usually in a business directory, with a phone number and a Facebook page but no site, or a site from 2014 that breaks on a phone.</p></li>
       <li><span>02</span><h3>I write, in your language</h3><p>One short email naming one concrete thing: photos that nobody sees, a phone number you cannot tap, a homepage that does not open over https.</p></li>
       <li><span>03</span><h3>You get a concept, free</h3><p>Built from your own photos, services and contacts. On a live link, so you can open it on your phone and show your family.</p></li>
-      <li><span>04</span><h3>You say yes, or no</h3><p>Yes means 300 € for the full site, all files and code, and a month of free edits. No means we part as friends and the link stays up.</p></li>
+      <li><span>04</span><h3>You say yes, or no</h3><p>Yes means 300 € for the full site, all files and code, and a month of free edits. No means nothing to pay, and I take the concept down within a week if you ask.</p></li>
     </ol>
   </div>
 </section>
@@ -126,7 +147,7 @@
     <div>
       <p class="eyebrow">Pricing</p>
       <h2><em>300&nbsp;€</em> once. That is the whole price list.</h2>
-      <p class="lead">No subscriptions, no retainer, no surprise line items. The domain is yours, the code is yours, the hosting can be free.</p>
+      <p class="lead">No subscriptions, no retainer, no surprise line items. The domain is yours, the code is yours, the hosting can be free. You pay after the site is live on your domain.</p>
     </div>
     <ul class="price__list">
       <li>Homepage concept before any payment</li>
@@ -134,7 +155,7 @@
       <li>All files and source code handed over</li>
       <li>One month of free edits after handover</li>
       <li>Help with domain and hosting setup</li>
-      <li>Written communication: email, WhatsApp, Viber, Telegram</li>
+      <li>Everything in writing: email, WhatsApp, Viber, Telegram</li>
     </ul>
   </div>
 </section>
@@ -145,7 +166,7 @@
     <div>
       <p class="eyebrow">About</p>
       <h2>Artur Vasilyan.</h2>
-      <p class="lead">Designer and developer from Ukraine. I like small companies where the owner answers the phone, and I like it when a site finally shows the work they are proud of. I write to clients in Latvian, Lithuanian, Estonian, Polish, Ukrainian, German, Swedish, Finnish, Danish, Dutch, French and English.</p>
+      <p class="lead">Designer and developer in Kyiv, Ukraine. I like small companies where the owner answers the phone, and I like it when a site finally shows the work they are proud of. I work in writing, in your language, and your site and files live on hosting outside Ukraine, so nothing depends on my power grid.</p>
     </div>
     <div class="contact">
       <p class="contact__l">Have a business that deserves a better page?</p>
@@ -167,24 +188,28 @@
 <dialog class="peek" id="peek" aria-labelledby="peekTitle">
   <div class="peek__bar">
     <span class="peek__t" id="peekTitle"></span>
-    <a class="link" id="peekOpen" href="#" target="_blank" rel="noopener">Open in a new tab ↗</a>
+    <a class="link" id="peekOpen" href="#" target="_blank" rel="noopener">Open ↗</a>
     <button class="peek__x" id="peekClose" type="button" aria-label="Close preview">×</button>
   </div>
-  <div class="peek__phone"><iframe id="peekFrame" title="Live preview" loading="lazy" referrerpolicy="no-referrer"></iframe></div>
+  <div class="peek__phone"><iframe id="peekFrame" title="Live preview" referrerpolicy="no-referrer"></iframe></div>
   <p class="peek__hint">This is the real page, not a screenshot. Scroll it.</p>
 </dialog>
 
+<nav class="bar" id="bar" aria-label="Quick actions">
+  <a href="#pricing">300 € · how it works</a>
+  <a class="bar__mail" href="mailto:vasilyanaptyp@gmail.com?subject=Website%20for%20my%20business">Email me</a>
+</nav>
+
 <footer class="ftr">
   <div class="wrap ftr__in">
-    <span>© 2026 Artur Vasilyan</span>
-    <span>Concepts shown are unofficial redesign proposals built from each business's public materials; live client sites are marked.</span>
+    <span>© 2026 Artur Vasilyan · Kyiv</span>
+    <span>Concept pages are unsolicited redesign proposals built from each business’s public materials and are marked as such; the live client site is marked too.</span>
   </div>
 </footer>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha384-g4NTh/Iv5PPU4xPyhEWqPcwtNXOvdaDI8LLnyYfyNZOjKJeYQyjzQ9X5275eBjpt" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha384-Z3REaz79l2IaAZqJsSABtTbhjgOUYyV3p90XNnAPCSHg3EMTz1fouunq9WZRtj3d" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js" integrity="sha384-3zSEDfvllQohrq0PHL1fOXJuC/jSOO34H46t6UQfobFOmxE5BpjjaIJY5F2/bMnU" crossorigin="anonymous"></script>
-<script src="assets/js/data.js"></script>
 <script src="assets/js/main.js"></script>
 </body>
 </html>
