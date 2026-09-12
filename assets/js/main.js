@@ -110,13 +110,48 @@
     ScrollTrigger.create({ trigger: '.hero', start: 'top bottom', end: 'bottom top', onLeave: function () { drift.pause(); }, onEnterBack: function () { drift.play(); }, onLeaveBack: function () { drift.pause(); }, onEnter: function () { drift.play(); } });
   }
 
-  /* ---------- reveals ---------- */
-  gsap.utils.toArray('.sec__head, .hero__copy > *').forEach(function (el) {
-    gsap.from(el, { y: 24, opacity: 0, duration: .9, ease: 'expo.out', scrollTrigger: { trigger: el, start: 'top 88%', once: true } });
+  /* ---------- hero: headline words rise, copy follows, wall parallaxes on scroll ---------- */
+  var intro = gsap.timeline({ defaults: { ease: 'expo.out' } });
+  intro.from('.hero__h .w', { yPercent: 105, duration: 1.1, stagger: 0.06 }, 0.05)
+       .from('.hero .eyebrow', { y: 10, opacity: 0, duration: .7 }, 0.1)
+       .from('.hero__sub, .hero__cta', { y: 20, opacity: 0, duration: .9, stagger: .1 }, 0.5)
+       .from('.hero__facts li', { y: 14, opacity: 0, duration: .7, stagger: .06 }, 0.8);
+  if (plane) {
+    intro.from(plane, { y: 120, opacity: 0, duration: 1.6, ease: 'expo.out' }, 0.2);
+    gsap.to(plane, { y: -140, ease: 'none', scrollTrigger: { trigger: '.hero', start: 'top top', end: 'bottom top', scrub: 0.6 } });
+  }
+
+  /* ---------- section heads: words rise line by line ---------- */
+  gsap.utils.toArray('.sec__head').forEach(function (el) {
+    gsap.from(el.querySelectorAll('.eyebrow, h2, .lead'), { y: 26, opacity: 0, duration: 1, stagger: .1, ease: 'expo.out', scrollTrigger: { trigger: el, start: 'top 85%', once: true } });
   });
-  gsap.utils.toArray('.card, .cmp, .steps li, .price__card, .about__grid > *').forEach(function (el, i) {
-    gsap.from(el, { y: 30, opacity: 0, duration: .8, ease: 'expo.out', delay: (i % 3) * .06, scrollTrigger: { trigger: el, start: 'top 90%', once: true } });
+
+  /* ---------- work cards: rise + the phone slides in after the desktop ---------- */
+  gsap.utils.toArray('.card').forEach(function (el, i) {
+    var tl = gsap.timeline({ scrollTrigger: { trigger: el, start: 'top 88%', once: true } });
+    tl.from(el, { y: 36, opacity: 0, duration: .9, ease: 'expo.out', delay: (i % 3) * .08 })
+      .from(el.querySelector('.card__m'), { y: 40, x: 20, opacity: 0, duration: .8, ease: 'expo.out' }, '-=.5');
   });
+
+  /* ---------- before/after: the handle sweeps once when the card comes into view ---------- */
+  gsap.utils.toArray('.cmp').forEach(function (el, i) {
+    var range = el.querySelector('.cmp__range'), o = { p: 100 };
+    gsap.from(el, { y: 36, opacity: 0, duration: .9, ease: 'expo.out', delay: i * .08, scrollTrigger: { trigger: el, start: 'top 88%', once: true } });
+    gsap.to(o, { p: 50, duration: 1.6, ease: 'power3.inOut', delay: .3 + i * .15,
+      onUpdate: function () { el.style.setProperty('--p', o.p + '%'); if (range) range.value = o.p; },
+      scrollTrigger: { trigger: el, start: 'top 75%', once: true } });
+  });
+
+  /* ---------- process: cards rise, the connector draws itself ---------- */
+  var steps = document.getElementById('steps');
+  if (steps) {
+    gsap.from(steps.querySelectorAll('li'), { y: 30, opacity: 0, duration: .9, stagger: .12, ease: 'expo.out', scrollTrigger: { trigger: steps, start: 'top 85%', once: true } });
+    gsap.to(steps, { '--line-p': 1, ease: 'none', scrollTrigger: { trigger: steps, start: 'top 80%', end: 'bottom 60%', scrub: 0.5 } });
+  }
+
+  /* ---------- pricing + about: settle in ---------- */
+  gsap.from('.price__card', { scale: .96, y: 30, opacity: 0, duration: 1, ease: 'expo.out', scrollTrigger: { trigger: '.price__card', start: 'top 85%', once: true } });
+  gsap.from('.about__grid > *', { y: 30, opacity: 0, duration: .9, stagger: .12, ease: 'expo.out', scrollTrigger: { trigger: '.about', start: 'top 85%', once: true } });
 
   window.addEventListener('load', function () { ScrollTrigger.refresh(); });
 })();
