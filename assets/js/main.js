@@ -91,6 +91,75 @@
     if (navigator.clipboard) navigator.clipboard.writeText(mail).then(done, done); else done();
   });
 
+  /* ---------- pitch in your language (auto-picked from the browser) ---------- */
+  var pitch = document.getElementById('pitch'), langs = document.getElementById('langs'), PITCH = window.PITCH || {};
+  if (pitch && langs && Object.keys(PITCH).length) {
+    var setLang = function (code, animate) {
+      if (!PITCH[code]) return;
+      var apply = function () { pitch.innerHTML = PITCH[code].text; pitch.setAttribute('lang', code); };
+      langs.querySelectorAll('button').forEach(function (b) { b.setAttribute('aria-pressed', b.dataset.lang === code ? 'true' : 'false'); });
+      if (animate && typeof gsap !== 'undefined' && !rm) gsap.to(pitch, { opacity: 0, y: 6, duration: .18, onComplete: function () { apply(); gsap.to(pitch, { opacity: 1, y: 0, duration: .35, ease: 'expo.out' }); } });
+      else apply();
+      try { localStorage.setItem('pitchLang', code); } catch (e) {}
+    };
+    Object.keys(PITCH).forEach(function (code) {
+      var b = document.createElement('button'); b.type = 'button'; b.dataset.lang = code; b.textContent = code.toUpperCase(); b.title = PITCH[code].name; b.setAttribute('aria-pressed', 'false');
+      b.addEventListener('click', function () { setLang(code, true); });
+      langs.appendChild(b);
+    });
+    var saved = null; try { saved = localStorage.getItem('pitchLang'); } catch (e) {}
+    var nav = (navigator.language || 'en').slice(0, 2).toLowerCase();
+    setLang(saved && PITCH[saved] ? saved : (PITCH[nav] ? nav : 'en'), false);
+  }
+
+  /* ---------- theme toggle (system by default, remembered when chosen) ---------- */
+  var themeBtn = document.getElementById('themeBtn');
+  if (themeBtn) {
+    var sysDark = window.matchMedia('(prefers-color-scheme: dark)');
+    var current = function () { return doc.getAttribute('data-theme') || (sysDark.matches ? 'dark' : 'light'); };
+    var label = function () { themeBtn.setAttribute('aria-label', current() === 'dark' ? 'Switch to light theme' : 'Switch to dark theme'); };
+    themeBtn.addEventListener('click', function () {
+      var next = current() === 'dark' ? 'light' : 'dark';
+      doc.setAttribute('data-theme', next); try { localStorage.setItem('theme', next); } catch (e) {}
+      label();
+    });
+    label();
+  }
+
+  /* ---------- live preview: the real page inside a phone ---------- */
+  var peek = document.getElementById('peek');
+  if (peek && typeof peek.showModal === 'function') {
+    var frame = document.getElementById('peekFrame'), pt = document.getElementById('peekTitle'), po = document.getElementById('peekOpen');
+    var openPeek = function (w) {
+      pt.textContent = w.name + ' — ' + w.place; po.href = w.url; frame.src = w.url;
+      peek.showModal(); document.body.style.overflow = 'hidden';
+    };
+    var closePeek = function () { peek.close(); };
+    peek.addEventListener('close', function () { frame.src = 'about:blank'; document.body.style.overflow = ''; });
+    document.getElementById('peekClose').addEventListener('click', closePeek);
+    peek.addEventListener('click', function (e) { if (e.target === peek) closePeek(); });
+    document.querySelectorAll('.card').forEach(function (card, i) {
+      var w = W[i]; if (!w || w.live) return;      // client sites may forbid framing; those open in a new tab
+      var b = document.createElement('button'); b.type = 'button'; b.className = 'card__peek'; b.textContent = 'Preview on a phone';
+      b.addEventListener('click', function (e) { e.preventDefault(); e.stopPropagation(); openPeek(w); });
+      card.querySelector('.card__meta').appendChild(b);
+    });
+  }
+
+  /* ---------- clock: my local time, so you know when to expect an answer ---------- */
+  var clock = document.getElementById('clock');
+  if (clock) {
+    var fmt = new Intl.DateTimeFormat('en-GB', { hour: '2-digit', minute: '2-digit', timeZone: 'Europe/Kyiv' });
+    var tick = function () { var h = +fmt.format(new Date()).slice(0, 2); clock.textContent = 'It is ' + fmt.format(new Date()) + ' in Kyiv' + (h >= 9 && h < 21 ? ' — I am probably online.' : ' — I will answer in the morning.'); };
+    tick(); setInterval(tick, 30000);
+  }
+
+  /* ---------- QR code of this page ---------- */
+  var qr = document.getElementById('qr');
+  if (qr && typeof QRCode !== 'undefined') {
+    try { new QRCode(qr, { text: 'https://vasilyanaptyp-oss.github.io/', width: 112, height: 112, colorDark: '#141412', colorLight: '#ffffff', correctLevel: QRCode.CorrectLevel.M }); } catch (e) { qr.parentNode.remove(); }
+  } else if (qr) { qr.parentNode.remove(); }
+
   if (rm || typeof gsap === 'undefined') { doc.classList.add('rm'); return; }
   gsap.registerPlugin(ScrollTrigger);
   ScrollTrigger.config({ ignoreMobileResize: true });
@@ -98,13 +167,14 @@
   /* ---------- wall: drift + mouse parallax ---------- */
   var plane = document.getElementById('wallPlane');
   if (plane && track) {
+    gsap.set(plane, { rotateX: 55, rotateZ: -12 });   // record the resting angles so quickTo has a start value
     var drift = gsap.to(track, { yPercent: -50, duration: 60, ease: 'none', repeat: -1 });
-    var qx = gsap.quickTo(plane, 'rotateZ', { duration: 1.2, ease: 'power3.out' });
-    var qy = gsap.quickTo(plane, 'rotateX', { duration: 1.2, ease: 'power3.out' });
+    var mx = 0, my = 0, rafId = 0;
+    var tilt = function () { rafId = 0; gsap.to(plane, { rotateZ: -12 + mx * 6, rotateX: 55 - my * 8, duration: 1.2, ease: 'power3.out', overwrite: 'auto' }); };
     window.addEventListener('pointermove', function (e) {
       if (e.pointerType === 'touch' || window.innerWidth < 900) return;
-      qx(-12 + (e.clientX / window.innerWidth - 0.5) * 6);
-      qy(55 - (e.clientY / window.innerHeight - 0.5) * 8);
+      mx = e.clientX / window.innerWidth - 0.5; my = e.clientY / window.innerHeight - 0.5;
+      if (!rafId) rafId = requestAnimationFrame(tilt);
     }, { passive: true });
     // slow down while the hero is off screen
     ScrollTrigger.create({ trigger: '.hero', start: 'top bottom', end: 'bottom top', onLeave: function () { drift.pause(); }, onEnterBack: function () { drift.play(); }, onLeaveBack: function () { drift.pause(); }, onEnter: function () { drift.play(); } });

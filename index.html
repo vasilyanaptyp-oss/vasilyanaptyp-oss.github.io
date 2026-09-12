@@ -19,7 +19,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap">
 <link rel="stylesheet" href="assets/css/style.css">
-<script>document.documentElement.classList.add('js');</script>
+<script>document.documentElement.classList.add('js');try{var t=localStorage.getItem('theme');if(t)document.documentElement.setAttribute('data-theme',t);}catch(e){}</script>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"Person","name":"Artur Vasilyan","jobTitle":"Web designer & developer","email":"mailto:vasilyanaptyp@gmail.com","url":"https://vasilyanaptyp-oss.github.io/","knowsLanguage":["uk","ru","en","lv","lt","et","pl","de","sv","fi","da","nl","fr"]}
 </script>
@@ -36,7 +36,10 @@
     <a href="#process">Process</a>
     <a href="#pricing">Pricing</a>
   </nav>
-  <a class="btn btn--sm" href="mailto:vasilyanaptyp@gmail.com?subject=Website%20for%20my%20business">Email me</a>
+  <div class="hdr__act">
+    <button class="theme" id="themeBtn" type="button" aria-label="Switch to dark theme" title="Light / dark"><span class="theme__sun" aria-hidden="true"></span></button>
+    <a class="btn btn--sm" href="mailto:vasilyanaptyp@gmail.com?subject=Website%20for%20my%20business">Email me</a>
+  </div>
 </header>
 
 <main id="top">
@@ -46,7 +49,8 @@
   <div class="hero__copy">
     <p class="eyebrow">Web designer &amp; developer · working across Europe</p>
     <h1 class="hero__h"><span class="l"><span class="w">Websites</span></span> <span class="l"><span class="w">for</span></span> <span class="l"><span class="w">people</span></span> <span class="l"><span class="w">who</span></span> <span class="l"><span class="w">work</span></span> <span class="l"><span class="w">with</span></span> <span class="l"><em class="w">their</em></span> <span class="l"><em class="w">hands.</em></span></h1>
-    <p class="hero__sub">Gates, kitchens, roofs, renovations, car workshops, truck washes. I find small craft businesses that are invisible online, build them a homepage concept for free, and charge a flat <b>300&nbsp;€</b> only if they say yes.</p>
+    <p class="hero__sub" id="pitch" lang="en">Gates, kitchens, roofs, renovations, car workshops, truck washes. I find small craft businesses that are invisible online, build them a homepage concept for free, and charge a flat <b>300&nbsp;€</b> only if they say yes.</p>
+    <div class="langs" id="langs" aria-label="Read this pitch in"><span class="langs__l">Read this in</span></div>
     <div class="hero__cta">
       <a class="btn" href="#work">See the work</a>
       <a class="link" href="#before">How the old site looked →</a>
@@ -150,11 +154,25 @@
         <button class="btn" type="button" id="copyMail">Copy email</button>
         <span class="contact__note" id="copyNote">I answer within a day.</span>
       </div>
+      <div class="contact__foot">
+        <p class="clock" id="clock" aria-live="off"></p>
+        <div class="qr"><div class="qr__box" id="qr" aria-label="QR code with the address of this page"></div><span>Scan to open this page on your phone</span></div>
+      </div>
     </div>
   </div>
 </section>
 
 </main>
+
+<dialog class="peek" id="peek" aria-labelledby="peekTitle">
+  <div class="peek__bar">
+    <span class="peek__t" id="peekTitle"></span>
+    <a class="link" id="peekOpen" href="#" target="_blank" rel="noopener">Open in a new tab ↗</a>
+    <button class="peek__x" id="peekClose" type="button" aria-label="Close preview">×</button>
+  </div>
+  <div class="peek__phone"><iframe id="peekFrame" title="Live preview" loading="lazy" referrerpolicy="no-referrer"></iframe></div>
+  <p class="peek__hint">This is the real page, not a screenshot. Scroll it.</p>
+</dialog>
 
 <footer class="ftr">
   <div class="wrap ftr__in">
@@ -165,6 +183,7 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha384-g4NTh/Iv5PPU4xPyhEWqPcwtNXOvdaDI8LLnyYfyNZOjKJeYQyjzQ9X5275eBjpt" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha384-Z3REaz79l2IaAZqJsSABtTbhjgOUYyV3p90XNnAPCSHg3EMTz1fouunq9WZRtj3d" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js" integrity="sha384-3zSEDfvllQohrq0PHL1fOXJuC/jSOO34H46t6UQfobFOmxE5BpjjaIJY5F2/bMnU" crossorigin="anonymous"></script>
 <script src="assets/js/data.js"></script>
 <script src="assets/js/main.js"></script>
 </body>

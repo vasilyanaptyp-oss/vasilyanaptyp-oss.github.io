@@ -25,3 +25,19 @@ window.MORE = [
 /* Before/after pairs: old site (captured on a phone) vs. the concept. Filled in after capture; ids must have <id>-old-m.webp. */
 window.PAIRS = ['ripex', 'fineremont', 'tomi', 'alarm3'];
 window.GREET = ['Labdien', 'Sveiki', 'Tere', 'Dzień dobry', 'Доброго дня', 'Guten Tag', 'Hej', 'Hei', 'Goddag', 'Goedendag', 'Bonjour', 'Hello'];
+
+/* The hero pitch in the languages I write to clients in. Auto-selected from the browser language. */
+window.PITCH = {
+  en: { name: 'English',    text: 'Gates, kitchens, roofs, renovations, car workshops, truck washes. I find small craft businesses that are invisible online, build them a homepage concept for free, and charge a flat <b>300&nbsp;€</b> only if they say yes.' },
+  lv: { name: 'Latviešu',   text: 'Vārti, virtuves, jumti, remonti, autoservisi, kravas auto mazgātavas. Es atrodu mazus amatnieku uzņēmumus, kurus internetā nevar atrast, bez maksas uztaisu sākumlapas variantu un prasu <b>300&nbsp;€</b> tikai tad, ja jums patīk.' },
+  lt: { name: 'Lietuvių',   text: 'Vartai, virtuvės, stogai, remontas, autoservisai, sunkvežimių plovyklos. Surandu mažas amatininkų įmones, kurių internete nematyti, nemokamai paruošiu pagrindinio puslapio variantą ir prašau <b>300&nbsp;€</b> tik tada, jei jums patinka.' },
+  et: { name: 'Eesti',      text: 'Väravad, köögid, katused, remont, autotöökojad, veokipesulad. Leian väikesed käsitööettevõtted, keda internetis ei näe, teen tasuta avalehe kavandi ja küsin <b>300&nbsp;€</b> ainult siis, kui see teile meeldib.' },
+  pl: { name: 'Polski',     text: 'Bramy, kuchnie, dachy, remonty, warsztaty, myjnie ciężarówek. Znajduję małe firmy rzemieślnicze, których nie widać w internecie, robię im za darmo koncepcję strony głównej i biorę <b>300&nbsp;€</b> tylko wtedy, gdy powiedzą tak.' },
+  uk: { name: 'Українська', text: 'Ворота, кухні, дахи, ремонти, автосервіси, мийки вантажівок. Я знаходжу малі майстерні, яких не видно в інтернеті, безкоштовно роблю їм концепт головної сторінки і беру <b>300&nbsp;€</b> лише тоді, коли вони кажуть «так».' },
+  de: { name: 'Deutsch',    text: 'Tore, Küchen, Dächer, Renovierungen, Werkstätten, Lkw-Waschanlagen. Ich finde kleine Handwerksbetriebe, die online unsichtbar sind, baue ihnen kostenlos ein Startseiten-Konzept und berechne pauschal <b>300&nbsp;€</b>, nur wenn sie Ja sagen.' },
+  sv: { name: 'Svenska',    text: 'Grindar, kök, tak, renoveringar, bilverkstäder, lastbilstvättar. Jag hittar små hantverksföretag som är osynliga på nätet, bygger ett startsidekoncept gratis och tar <b>300&nbsp;€</b> bara om de säger ja.' },
+  fi: { name: 'Suomi',      text: 'Portit, keittiöt, katot, remontit, autokorjaamot, rekkapesulat. Etsin pieniä käsityöyrityksiä, joita ei löydy netistä, teen etusivun luonnoksen ilmaiseksi ja veloitan <b>300&nbsp;€</b> vain, jos sanotte kyllä.' },
+  da: { name: 'Dansk',      text: 'Porte, køkkener, tage, renoveringer, autoværksteder, lastbilvask. Jeg finder små håndværksvirksomheder, der er usynlige online, laver et gratis forslag til forsiden og tager <b>300&nbsp;€</b>, kun hvis de siger ja.' },
+  nl: { name: 'Nederlands', text: 'Poorten, keukens, daken, renovaties, garages, truckwasstraten. Ik vind kleine ambachtelijke bedrijven die online onzichtbaar zijn, maak gratis een concept voor hun homepage en reken <b>300&nbsp;€</b> alleen als ze ja zeggen.' },
+  fr: { name: 'Français',   text: 'Portails, cuisines, toitures, rénovations, garages, lavage de camions. Je trouve de petites entreprises artisanales invisibles en ligne, je leur construis gratuitement un concept de page d’accueil et je facture <b>300&nbsp;€</b> seulement si elles disent oui.' }
+};
