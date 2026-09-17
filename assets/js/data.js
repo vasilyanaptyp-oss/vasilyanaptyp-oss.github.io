@@ -12,7 +12,16 @@ window.WORK = [
   { id: 'ards', name: 'ARDS Saldus', place: 'Saldus, Latvia', craft: 'Car service', lang: 'Latvian', url: 'https://vasilyanaptyp-oss.github.io/ards-concept/', tag: 'Service finder' },
   { id: 'mebtex', name: 'MEBTEX', place: 'Riga, Latvia', craft: 'Carpentry & furniture', lang: 'Latvian', url: 'https://vasilyanaptyp-oss.github.io/mebtex-concept/', tag: 'Work-first homepage' },
   { id: 'magicroof', name: 'Magic Roof', place: 'Linz, Austria', craft: 'Roofing & waterproofing', lang: 'German', url: 'https://vasilyanaptyp-oss.github.io/magic-roof-concept/', tag: 'Interactive services' },
-  { id: 'mekian', name: 'MEKIAN Bilverkstad', place: 'Täby, Sweden', craft: 'Car workshop', lang: 'Swedish', url: 'https://vasilyanaptyp-oss.github.io/mekian-concept/', tag: 'Booking-first' }
+  { id: 'mekian', name: 'MEKIAN Bilverkstad', place: 'Täby, Sweden', craft: 'Car workshop', lang: 'Swedish', url: 'https://vasilyanaptyp-oss.github.io/mekian-concept/', tag: 'Booking-first' },
+  { id: 'janbra', name: 'JanBra OÜ', place: 'Kuusalu, Estonia', craft: 'Furniture assembly & joinery', lang: 'Estonian', url: 'https://vasilyanaptyp-oss.github.io/janbra-concept/', tag: '3D wardrobe assembles on scroll' },
+  { id: 'ventsistema', name: 'Ventsistema', place: 'Vilnius, Lithuania', craft: 'Ventilation & heat recovery', lang: 'Lithuanian', url: 'https://vasilyanaptyp-oss.github.io/ventsistema-concept/', tag: 'Live 3D recuperator, air calculator' },
+  { id: 'iguzuolaidos', name: 'IG užuolaidų salonas', place: 'Kelmė, Lithuania', craft: 'Curtains & blinds', lang: 'Lithuanian', url: 'https://vasilyanaptyp-oss.github.io/ig-uzuolaidos-concept/', tag: 'Opens like curtains on a rail' },
+  { id: 'tulu', name: 'TULU PH OÜ', place: 'Tartu, Estonia', craft: '24h locksmith', lang: 'Estonian', url: 'https://vasilyanaptyp-oss.github.io/tulu-ph-concept/', tag: 'Lock in cross-section, night mode' },
+  { id: 'vytesa', name: 'Vytesa', place: 'Kėdainiai, Lithuania', craft: 'Electrical installation', lang: 'Lithuanian', url: 'https://vasilyanaptyp-oss.github.io/vytesa-concept/', tag: 'Situations as breakers on a DIN rail' },
+  { id: 'klava', name: 'Dr. Laura Kļava', place: 'Iecava, Latvia', craft: 'Mobile veterinarian', lang: 'Latvian', url: 'https://vasilyanaptyp-oss.github.io/klava-vet-concept/', tag: 'Situation + pet + place → ready SMS' },
+  { id: 'grdarbi', name: 'GR DARBI', place: 'Kuldīga, Latvia', craft: 'Plastering, painting & finishing', lang: 'Latvian', url: 'https://vasilyanaptyp-oss.github.io/grdarbi-concept/', tag: 'A wall gets finished as you scroll' },
+  { id: 'viktorija', name: 'Med. kosmetologė Viktorija', place: 'Visaginas, Lithuania', craft: 'Medical cosmetology', lang: 'Lithuanian & Russian', url: 'https://vasilyanaptyp-oss.github.io/kosmetologe-viktorija-concept/', tag: 'One ring lamp lights the page' },
+  { id: 'impress', name: 'Impress', place: 'Utena, Lithuania', craft: 'Beauty salon', lang: 'Lithuanian', url: 'https://vasilyanaptyp-oss.github.io/impress-utena-concept/', tag: 'Scissors, dropper and brush drawn live' }
 ];
 window.MORE = [
   { id: 'alarm3', name: 'ALARM3', place: 'Riga, Latvia', craft: 'Car service', url: 'https://vasilyanaptyp-oss.github.io/alarm3-concept/' },
