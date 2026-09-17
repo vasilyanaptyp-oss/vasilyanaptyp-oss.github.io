@@ -1,9 +1,9 @@
 /* Work list. Facts only: each entry is a public page built from the business's own materials.
-   The first entry is the one live client site; everything else is an unsolicited concept. */
+   The first two entries are live client sites; everything else is an unsolicited concept. */
 window.WORK = [
   { id: 'sos', name: 'Autopalīdzība.lv', place: 'Daugavpils, Latvia', craft: 'Towing 24/7', lang: 'Latvian', url: 'https://autopalidziba.lv/', live: true, tag: 'Live client site' },
+  { id: 'vartu', name: 'Vārtu pasaule', place: 'Nītaure, Latvia', craft: 'Gates, doors, fences & automation', lang: 'Latvian', url: 'https://vartupasaule.lv/', live: true, tag: 'Live client site · 8 pages' },
   { id: 'fineremont', name: 'Файний Ремонт', place: 'Kyiv, Ukraine', craft: 'Apartment renovation', lang: 'Ukrainian', url: 'https://vasilyanaptyp-oss.github.io/fineremont-concept/', tag: '3D gallery' },
-  { id: 'vartu', name: 'Vārtu pasaule', place: 'Nītaure, Latvia', craft: 'Gates, doors & automation', lang: 'Latvian', url: 'https://vasilyanaptyp-oss.github.io/vartu-pasaule-concept/', tag: 'Product catalogue' },
   { id: 'ripex', name: 'RIPEX', place: 'Alytus, Lithuania', craft: 'Machinery rental & construction', lang: 'Lithuanian', url: 'https://vasilyanaptyp-oss.github.io/ripex-concept/', tag: 'Rental request form' },
   { id: 'kimela', name: 'Kimela', place: 'Klaipėda, Lithuania', craft: 'Truck & tanker wash', lang: 'Lithuanian', url: 'https://vasilyanaptyp-oss.github.io/kimela-concept/', tag: 'Booking by vehicle type' },
   { id: 'tomi', name: 'Tomi Meble', place: 'Radom, Poland', craft: 'Fitted kitchens', lang: 'Polish', url: 'https://vasilyanaptyp-oss.github.io/tomi-meble-concept/', tag: 'Showroom and branch, six phones' },
