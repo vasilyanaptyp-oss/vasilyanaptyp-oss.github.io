@@ -136,7 +136,7 @@
   /* ---------- QR code of this page ---------- */
   var qr = document.getElementById('qr');
   if (qr && typeof QRCode !== 'undefined') {
-    try { new QRCode(qr, { text: 'https://vasilyanaptyp-oss.github.io/', width: 112, height: 112, colorDark: '#141412', colorLight: '#ffffff', correctLevel: QRCode.CorrectLevel.M }); } catch (e) { qr.parentNode.remove(); }
+    try { new QRCode(qr, { text: 'https://vasylian.com/', width: 112, height: 112, colorDark: '#141412', colorLight: '#ffffff', correctLevel: QRCode.CorrectLevel.M }); } catch (e) { qr.parentNode.remove(); }
   } else if (qr) { qr.parentNode.remove(); }
 
   /* ---------- print: everything visible, regardless of scroll reveals ---------- */
