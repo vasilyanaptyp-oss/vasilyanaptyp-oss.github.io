@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" data-hero="b">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Создание сайта для фирмы, от 300 € | Артур Васильян</title>
 <meta name="description" content="Бесплатная первая версия вашей главной за 24 часа. Платите только если понравится, один раз и после запуска на вашем домене: от 300 €.">
-<meta name="theme-color" content="#f1f2f4">
+<meta name="theme-color" content="#062a20">
 <meta name="color-scheme" content="light">
 <link rel="canonical" href="https://vasylian.com/ru/">
 <link rel="alternate" hreflang="en" href="https://vasylian.com/">
@@ -32,11 +32,12 @@
 <link rel="icon" href="../assets/icon-96.png" type="image/png" sizes="96x96">
 <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
 <link rel="manifest" href="../site.webmanifest">
-<link rel="preload" href="../assets/fonts/sofia-sans-semi-condensed-cyrillic-ru-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" as="image" href="../assets/shots/vmbuve-h-720.webp" imagesrcset="../assets/shots/vmbuve-h-720.webp 720w, ../assets/shots/vmbuve-h.webp 1080w" imagesizes="(max-width: 599px) calc(100vw - 32px), (max-width: 959px) 520px, 1px" media="(max-width: 959px)" fetchpriority="high">
-<link rel="preload" as="image" href="../assets/shots/vmbuve-d.webp" imagesrcset="../assets/shots/vmbuve-d-800.webp 800w, ../assets/shots/vmbuve-d.webp 1600w" imagesizes="(min-width: 1440px) 760px, 54vw" media="(min-width: 960px)">
-<link rel="stylesheet" href="../assets/css/style.css?v=b5c86358">
-<script>document.documentElement.classList.add('js')</script>
+<link rel="preload" href="../assets/fonts/ibm-plex-sans-cyrillic-600-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../assets/fonts/ibm-plex-sans-cyrillic-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../assets/fonts/ibm-plex-mono-latin-500-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" as="image" href="../assets/shots/constructa-m.webp" imagesrcset="../assets/shots/constructa-m-320.webp 320w, ../assets/shots/constructa-m.webp 440w, ../assets/shots/constructa-p.webp 720w" imagesizes="(min-width: 960px) 270px, 45vw" fetchpriority="high">
+<link rel="stylesheet" href="../assets/css/style.css?v=7479f362">
+<script>(function(d){d.classList.add('js');if(!matchMedia('(prefers-reduced-motion: reduce)').matches&&'animate' in d)d.classList.add('b-anim')})(document.documentElement)</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://vasylian.com/#website","url":"https://vasylian.com/","name":"Vasylian","alternateName":["Artur Vasilyan","Artur Vasylian","vasylian.com","Артур Васильян"],"inLanguage":["en","lv","lt","et","pl","de","uk","ru"],"publisher":{"@id":"https://vasylian.com/#artur"}},{"@type":"Person","@id":"https://vasylian.com/#artur","name":"Artur Vasilyan","alternateName":["Artur Vasylian","Vasylian","Vasilyan","Артур Васильян"],"givenName":"Artur","familyName":"Vasilyan","jobTitle":"Web designer & developer","email":"arthur@vasylian.com","url":"https://vasylian.com/","sameAs":["https://github.com/vasilyanaptyp-oss"],"worksFor":{"@id":"https://vasylian.com/#service"},"address":{"@type":"PostalAddress","addressLocality":"Kyiv","addressCountry":"UA"},"knowsLanguage":["uk","ru","en","lv","lt","et","pl","de"],"workExample":[{"@type":"WebSite","name":"V & M Būve","url":"https://vmbuve.lv/"},{"@type":"WebSite","name":"CONSTRUCTA","url":"https://constructa.lv/"},{"@type":"WebSite","name":"Ventsistema","url":"https://ventsistema.lt/"},{"@type":"WebSite","name":"Autopalīdzība.lv","url":"https://autopalidziba.lv/"},{"@type":"WebSite","name":"Vārtu pasaule","url":"https://vartupasaule.lv/"}]},{"@type":"ProfessionalService","@id":"https://vasylian.com/#service","name":"Vasylian","alternateName":"Artur Vasilyan, websites for small businesses","url":"https://vasylian.com/","email":"arthur@vasylian.com","logo":"https://vasylian.com/assets/icon-512.png","image":"https://vasylian.com/assets/og/ru.jpg","address":{"@type":"PostalAddress","addressLocality":"Kyiv","addressCountry":"UA"},"founder":{"@id":"https://vasylian.com/#artur"},"areaServed":[{"@type":"Country","name":"Latvia"},{"@type":"Country","name":"Lithuania"},{"@type":"Country","name":"Estonia"},{"@type":"Country","name":"Poland"},{"@type":"Country","name":"Czechia"},{"@type":"Country","name":"Ukraine"},{"@type":"Country","name":"Austria"},{"@type":"Country","name":"Germany"}],"priceRange":"from 300 EUR","inLanguage":"ru","makesOffer":{"@type":"Offer","price":"300","priceCurrency":"EUR","description":"Бесплатная первая версия главной страницы за 24 часа; полный сайт до 5 страниц от 300 € один раз, оплата после запуска на домене клиента."}}]}</script>
 </head>
 <body>
@@ -63,304 +64,235 @@
 <main id="top">
 <!-- #clients, #process and #start keep links to the old page's sections working -->
 
-<section class="hero" aria-labelledby="h1">
-  <a class="strip" id="strip" href="#contact"><span>Бесплатная первая версия</span><span class="strip__dot" aria-hidden="true">·</span><span class="strip__price">от 300 €</span><span class="strip__go" aria-hidden="true">→</span></a>
-  <div class="hero__stage" id="stage" role="region" aria-roledescription="carousel" aria-label="Сайты, которые я сделал">
-    <div class="win win--hero">
-      <div class="bar" id="heroBar"><svg class="lock" viewBox="0 0 12 14" aria-hidden="true" focusable="false"><path d="M3.2 6V4.3a2.8 2.8 0 1 1 5.6 0V6h.7c.6 0 1 .4 1 1v5c0 .6-.4 1-1 1h-7c-.6 0-1-.4-1-1V7c0-.6.4-1 1-1h.7Zm1.4 0h2.8V4.3a1.4 1.4 0 1 0-2.8 0V6Z"/></svg><a class="bar__url" id="heroUrl" href="https://vmbuve.lv/" target="_blank" rel="noopener">vmbuve.lv</a><span id="heroState"><span class="state state--live"><i class="dot" aria-hidden="true"></i>работает</span></span></div>
-      <div class="win__screens" id="screens">
-        <figure class="slide is-on" data-i="0" data-addr="vmbuve.lv" data-href="https://vmbuve.lv/" data-kind="live" data-name="V &amp; M Būve" data-meta="Салацгрива · Строительство и ремонт полного цикла">
-          <picture>
-            <source media="(min-width: 960px)" srcset="../assets/shots/vmbuve-d-800.webp 800w, ../assets/shots/vmbuve-d.webp 1600w" sizes="(min-width: 1440px) 760px, 54vw" width="1600" height="1000">
-            <img src="../assets/shots/vmbuve-h-720.webp" srcset="../assets/shots/vmbuve-h-720.webp 720w, ../assets/shots/vmbuve-h.webp 1080w" sizes="(max-width: 599px) calc(100vw - 32px), (max-width: 959px) 520px, 1px" width="720" height="900" alt="V &amp; M Būve: главная страница на телефоне" fetchpriority="high" decoding="async">
-          </picture>
-          <figcaption class="vh">V &amp; M Būve, Салацгрива: Строительство и ремонт полного цикла</figcaption>
-        </figure>
-        <figure class="slide" data-i="1" data-addr="constructa.lv" data-href="https://constructa.lv/" data-kind="live" data-name="CONSTRUCTA" data-meta="Рига · Строительство и ремонт" aria-hidden="true">
-          <picture>
-            <source media="(min-width: 960px)" data-srcset="../assets/shots/constructa-d-800.webp 800w, ../assets/shots/constructa-d.webp 1600w" sizes="(min-width: 1440px) 760px, 54vw" width="1600" height="1000">
-            <img data-src="../assets/shots/constructa-h-720.webp" data-srcset="../assets/shots/constructa-h-720.webp 720w, ../assets/shots/constructa-h.webp 1080w" sizes="(max-width: 599px) calc(100vw - 32px), (max-width: 959px) 520px, 1px" width="720" height="900" alt="CONSTRUCTA: главная страница на телефоне" decoding="async">
-          </picture>
-          <figcaption class="vh">CONSTRUCTA, Рига: Строительство и ремонт</figcaption>
-        </figure>
-        <figure class="slide" data-i="2" data-addr="ventsistema.lt" data-href="https://ventsistema.lt/" data-kind="live" data-name="Ventsistema" data-meta="Вильнюс · Вентиляция, рекуперация и кондиционирование" aria-hidden="true">
-          <picture>
-            <source media="(min-width: 960px)" data-srcset="../assets/shots/ventsistema-d-800.webp 800w, ../assets/shots/ventsistema-d.webp 1600w" sizes="(min-width: 1440px) 760px, 54vw" width="1600" height="1000">
-            <img data-src="../assets/shots/ventsistema-h-720.webp" data-srcset="../assets/shots/ventsistema-h-720.webp 720w, ../assets/shots/ventsistema-h.webp 1080w" sizes="(max-width: 599px) calc(100vw - 32px), (max-width: 959px) 520px, 1px" width="720" height="900" alt="Ventsistema: главная страница на телефоне" decoding="async">
-          </picture>
-          <figcaption class="vh">Ventsistema, Вильнюс: Вентиляция, рекуперация и кондиционирование</figcaption>
-        </figure>
-        <figure class="slide" data-i="3" data-addr="autopalidziba.lv" data-href="https://autopalidziba.lv/" data-kind="live" data-name="Autopalīdzība.lv" data-meta="Даугавпилс · Эвакуатор и помощь на дороге 24/7" aria-hidden="true">
-          <picture>
-            <source media="(min-width: 960px)" data-srcset="../assets/shots/sos-d-800.webp 800w, ../assets/shots/sos-d.webp 1600w" sizes="(min-width: 1440px) 760px, 54vw" width="1600" height="1000">
-            <img data-src="../assets/shots/sos-h-720.webp" data-srcset="../assets/shots/sos-h-720.webp 720w, ../assets/shots/sos-h.webp 1080w" sizes="(max-width: 599px) calc(100vw - 32px), (max-width: 959px) 520px, 1px" width="720" height="900" alt="Autopalīdzība.lv: главная страница на телефоне" decoding="async">
-          </picture>
-          <figcaption class="vh">Autopalīdzība.lv, Даугавпилс: Эвакуатор и помощь на дороге 24/7</figcaption>
-        </figure>
-        <figure class="slide" data-i="4" data-addr="vartupasaule.lv" data-href="https://vartupasaule.lv/" data-kind="live" data-name="Vārtu pasaule" data-meta="Нитауре · Ворота, двери, заборы и автоматика" aria-hidden="true">
-          <picture>
-            <source media="(min-width: 960px)" data-srcset="../assets/shots/vartu-d-800.webp 800w, ../assets/shots/vartu-d.webp 1600w" sizes="(min-width: 1440px) 760px, 54vw" width="1600" height="1000">
-            <img data-src="../assets/shots/vartu-h-720.webp" data-srcset="../assets/shots/vartu-h-720.webp 720w, ../assets/shots/vartu-h.webp 1080w" sizes="(max-width: 599px) calc(100vw - 32px), (max-width: 959px) 520px, 1px" width="720" height="900" alt="Vārtu pasaule: главная страница на телефоне" decoding="async">
-          </picture>
-          <figcaption class="vh">Vārtu pasaule, Нитауре: Ворота, двери, заборы и автоматика</figcaption>
-        </figure>
+
+<section class="b-hero" aria-labelledby="h1">
+  <div class="b-hero__in">
+    <h1 id="h1" class="b-hero__h">От записи в каталоге до такой главной за 24 часа.</h1>
+    <div class="b-stage" id="bStage" data-kind="live">
+      <div class="b-rec b-rec--before"><p class="b-rec__src">bis.gov.lv · Реестр строительных компаний Латвии</p><dl class="b-rows"><div><dt>Название</dt><dd>SIA «CONSTRUCTA»</dd></div><div><dt>Рег. №</dt><dd>40103658051</dd></div><div><dt>№ в реестре</dt><dd>18869</dd></div><div><dt>Город</dt><dd>Рига</dd></div><div class="is-miss"><dt>Сайт</dt><dd><mark>нет</mark></dd></div></dl></div>
+      <div class="b-morph" role="img" aria-label="bis.gov.lv · Реестр строительных компаний Латвии: SIA «CONSTRUCTA». constructa.lv">
+        <div class="b-morph__rec" aria-hidden="true"><p class="b-rec__src">bis.gov.lv · Реестр строительных компаний Латвии</p><dl class="b-rows"><div><dt>Название</dt><dd>SIA «CONSTRUCTA»</dd></div><div><dt>Рег. №</dt><dd>40103658051</dd></div><div><dt>№ в реестре</dt><dd>18869</dd></div><div><dt>Город</dt><dd>Рига</dd></div><div class="is-miss"><dt>Сайт</dt><dd><mark>нет</mark></dd></div></dl></div>
+        <div class="b-morph__site" aria-hidden="true">
+          <div class="b-bar"><svg class="lock" viewBox="0 0 12 14" aria-hidden="true" focusable="false"><path d="M3.2 6V4.3a2.8 2.8 0 1 1 5.6 0V6h.7c.6 0 1 .4 1 1v5c0 .6-.4 1-1 1h-7c-.6 0-1-.4-1-1V7c0-.6.4-1 1-1h.7Zm1.4 0h2.8V4.3a1.4 1.4 0 1 0-2.8 0V6Z"/></svg><span class="b-bar__url">constructa.lv</span><span class="b-pill b-pill--live"><i aria-hidden="true"></i>работает</span></div>
+          <div class="b-morph__shot"><img src="../assets/shots/constructa-m.webp" srcset="../assets/shots/constructa-m-320.webp 320w, ../assets/shots/constructa-m.webp 440w, ../assets/shots/constructa-p.webp 720w" sizes="(min-width: 960px) 270px, 45vw" width="440" height="953" alt="SIA «CONSTRUCTA»: главная страница на телефоне" fetchpriority="high" decoding="async"></div>
+        </div>
+      </div>
+      <span class="b-24" aria-hidden="true">24 h</span>
+      <span class="b-stage__tag" aria-hidden="true"><span class="b-pill b-pill--live"><i aria-hidden="true"></i>работает</span></span>
+    </div>
+    <script>(function(){var d=document.documentElement,s=document.getElementById('bStage');if(!s||!d.classList.contains('b-anim'))return;var m=s.querySelector('.b-morph'),c=s.querySelector('.b-rec--before'),r=m.querySelector('.b-morph__rec'),b=m.querySelector('.b-bar'),h=m.querySelector('.b-morph__shot'),z=s.querySelector('.b-24'),k=c.querySelector('mark'),E='cubic-bezier(.2,.75,.15,1)',A=[];function g(e,f,o){if(e&&e.animate)A.push(e.animate(f,o))}function run(){A.forEach(function(a){a.cancel()});A=[];s.classList.add('is-go');var q=getComputedStyle(m),t={l:m.offsetLeft,t:m.offsetTop,w:m.offsetWidth,h:m.offsetHeight},f={l:c.offsetLeft,t:c.offsetTop,w:c.offsetWidth,h:c.offsetHeight};g(m,[{left:f.l+'px',top:f.t+'px',width:f.w+'px',height:f.h+'px',transform:'rotate(-3deg)',borderRadius:'10px',borderColor:'rgba(3,29,22,0)',backgroundColor:'#fbfcf8'},{left:t.l+'px',top:t.t+'px',width:t.w+'px',height:t.h+'px',transform:q.transform,borderRadius:q.borderRadius,borderColor:q.borderColor,backgroundColor:q.backgroundColor}],{duration:460,easing:E});g(r,[{opacity:1},{opacity:0}],{duration:280,easing:'ease-out'});g(b,[{transform:'translateY(-100%)',opacity:0},{transform:'none',opacity:1}],{duration:320,delay:230,easing:E,fill:'backwards'});g(h,[{clipPath:'inset(0 0 100% 0)'},{clipPath:'inset(0 0 0% 0)'}],{duration:1050,delay:330,easing:'cubic-bezier(.33,.6,.2,1)',fill:'backwards'});g(z,[{opacity:0,transform:'scale(.5)'},{opacity:1,transform:'none'}],{duration:300,delay:1150,easing:E,fill:'backwards'});g(s.querySelector('.b-stage__tag'),[{opacity:0,transform:'translateY(6px)'},{opacity:1,transform:'none'}],{duration:260,delay:380,easing:E,fill:'backwards'});g(k,[{boxShadow:'0 0 0 0 rgba(255,110,100,0)'},{boxShadow:'0 0 0 7px rgba(255,110,100,.45)'},{boxShadow:'0 0 0 0 rgba(255,110,100,0)'}],{duration:900,delay:120})}window.__bRun=run;requestAnimationFrame(function(){requestAnimationFrame(run)})})()</script>
+    <div class="b-hero__offer">
+      <p class="b-hero__cap">SIA «CONSTRUCTA», Рига: от записи в реестре до constructa.lv</p>
+      <p class="b-hero__sub">Первая версия бесплатно. Платите, только если понравится: от 300 € один раз.</p>
+      <div class="b-hero__act">
+        <a class="b-btn" href="#contact" data-cta-watch>Хочу бесплатную первую версию <span aria-hidden="true">→</span></a>
       </div>
     </div>
-    <div class="phones" aria-hidden="true"><picture class="ph is-on" data-i="0"><source media="(min-width: 960px)"srcset="../assets/shots/vmbuve-m-320.webp" width="320" height="693"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" width="320" height="693" alt="" decoding="async"></picture><picture class="ph" data-i="1"><source media="(min-width: 960px)" data-srcset="../assets/shots/constructa-m-320.webp" width="320" height="693"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" width="320" height="693" alt="" decoding="async"></picture><picture class="ph" data-i="2"><source media="(min-width: 960px)" data-srcset="../assets/shots/ventsistema-m-320.webp" width="320" height="693"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" width="320" height="693" alt="" decoding="async"></picture><picture class="ph" data-i="3"><source media="(min-width: 960px)" data-srcset="../assets/shots/sos-m-320.webp" width="320" height="693"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" width="320" height="693" alt="" decoding="async"></picture><picture class="ph" data-i="4"><source media="(min-width: 960px)" data-srcset="../assets/shots/vartu-m-320.webp" width="320" height="693"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" width="320" height="693" alt="" decoding="async"></picture></div>
-    <div class="stage__ctl">
-      <p class="stage__cap" id="heroCap"><span class="cap__top"><b>V &amp; M Būve</b></span><span class="cap__meta">Салацгрива · Строительство и ремонт полного цикла</span></p>
-      <div class="segs" id="segs"><button class="seg" type="button" data-i="0" aria-label="V &amp; M Būve" aria-current="true"><i></i></button><button class="seg" type="button" data-i="1" aria-label="CONSTRUCTA"><i></i></button><button class="seg" type="button" data-i="2" aria-label="Ventsistema"><i></i></button><button class="seg" type="button" data-i="3" aria-label="Autopalīdzība.lv"><i></i></button><button class="seg" type="button" data-i="4" aria-label="Vārtu pasaule"><i></i></button></div>
-      <button class="playpause" type="button" id="playpause" aria-label="Остановить слайд-шоу" data-state="playing"><svg viewBox="0 0 12 12" aria-hidden="true" focusable="false"><path class="i-pause" d="M3 2h2v8H3zM7 2h2v8H7z"/><path class="i-play" d="M3 1.8v8.4L10 6z"/></svg></button>
-    </div>
-  </div>
-  <div class="hero__copy">
-    <h1 id="h1">Сначала посмотрите новую главную. Платите, только если понравится.</h1>
-    <p class="hero__sub">Первую версию делаю бесплатно, за 24 часа. Платите один раз, когда сайт заработает на вашем домене: от 300 €.</p>
-    <div class="hero__act">
-      <a class="btn" href="#contact">Хочу бесплатную первую версию</a>
-      <a class="more" href="#how">Как это работает <span aria-hidden="true">↓</span></a>
-    </div>
-    <div class="hl">
-      <p class="hl__t">Работают на собственных доменах владельцев</p>
-      <ul id="heroList"><li><button type="button" data-i="0" aria-current="true"><i class="dot" aria-hidden="true"></i><span class="hl__addr">vmbuve.lv</span><span class="hl__who">V &amp; M Būve, Салацгрива</span></button></li><li><button type="button" data-i="1"><i class="dot" aria-hidden="true"></i><span class="hl__addr">constructa.lv</span><span class="hl__who">CONSTRUCTA, Рига</span></button></li><li><button type="button" data-i="2"><i class="dot" aria-hidden="true"></i><span class="hl__addr">ventsistema.lt</span><span class="hl__who">Ventsistema, Вильнюс</span></button></li><li><button type="button" data-i="3"><i class="dot" aria-hidden="true"></i><span class="hl__addr">autopalidziba.lv</span><span class="hl__who">Autopalīdzība.lv, Даугавпилс</span></button></li><li><button type="button" data-i="4"><i class="dot" aria-hidden="true"></i><span class="hl__addr">vartupasaule.lv</span><span class="hl__who">Vārtu pasaule, Нитауре</span></button></li></ul>
-    </div>
   </div>
 </section>
 
-<section class="sec live" id="live" aria-labelledby="liveH">
+<section class="b-sec b-live" id="live" aria-labelledby="liveH">
   <span id="clients"></span>
-  <div class="wrap">
-    <div class="sec__head">
-      <h2 id="liveH">Работают на своих доменах</h2>
-      <p class="lead">Эти главные страницы я сделал сам, и теперь они работают как настоящие сайты самих компаний. Откройте любую на телефоне.</p>
-    </div>
-    <div class="cases">
-      <article class="case">
-        <div class="case__media">
-          <div class="win win--d"><div class="bar"><svg class="lock" viewBox="0 0 12 14" aria-hidden="true" focusable="false"><path d="M3.2 6V4.3a2.8 2.8 0 1 1 5.6 0V6h.7c.6 0 1 .4 1 1v5c0 .6-.4 1-1 1h-7c-.6 0-1-.4-1-1V7c0-.6.4-1 1-1h.7Zm1.4 0h2.8V4.3a1.4 1.4 0 1 0-2.8 0V6Z"/></svg><span class="bar__url">vmbuve.lv</span><span class="state state--live"><i class="dot" aria-hidden="true"></i>работает</span></div><img src="../assets/shots/vmbuve-d-800.webp" srcset="../assets/shots/vmbuve-d-800.webp 800w, ../assets/shots/vmbuve-d.webp 1600w" sizes="(min-width: 1240px) 700px, (min-width: 960px) 56vw, calc(100vw - 32px)" width="800" height="500" alt="V &amp; M Būve: главная страница на ноутбуке" loading="lazy" decoding="async"></div>
-          <div class="case__phone"><img src="../assets/shots/vmbuve-m-320.webp" width="320" height="693" alt="V &amp; M Būve: главная страница на телефоне" loading="lazy" decoding="async"></div>
+  <div class="b-wrap">
+    <header class="b-head"><p class="b-kick"><span class="b-kick__n">02</span>Результат</p><h2 id="liveH">Пять фирм и пять адресов, которые уже работают.</h2><p class="b-lead">Эти главные страницы сделал я, и теперь каждая работает на собственном домене компании.</p></header>
+    <ol class="b-deck" id="bDeck" aria-label="Пять фирм и пять адресов, которые уже работают.">
+      <li class="b-case">
+        <div class="b-case__rec"><b>SIA «V &amp; M BŪVE»</b><span>Салацгрива</span></div>
+        <a class="b-case__phone" href="https://vmbuve.lv/" target="_blank" rel="noopener"><img class="lz" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="../assets/shots/vmbuve-m.webp" data-srcset="../assets/shots/vmbuve-m-320.webp 320w, ../assets/shots/vmbuve-m.webp 440w, ../assets/shots/vmbuve-p.webp 720w" sizes="(min-width: 960px) 230px, 72vw" width="440" height="953" alt="V &amp; M Būve: главная страница на телефоне" decoding="async"></a>
+        <div class="b-case__foot">
+          <h3 class="b-case__domain"><a href="https://vmbuve.lv/" target="_blank" rel="noopener">vmbuve.lv</a></h3>
+          <p class="b-case__meta"><span class="b-pill b-pill--live"><i aria-hidden="true"></i>работает</span><span>V &amp; M Būve, Салацгрива</span></p>
+          <p class="b-case__craft">Строительство и ремонт полного цикла</p>
         </div>
-        <div class="case__text">
-          <h3 class="case__domain"><a href="https://vmbuve.lv/" target="_blank" rel="noopener">vmbuve.lv</a></h3>
-          <p class="case__who"><span class="state state--live"><i class="dot" aria-hidden="true"></i>работает</span><span>V &amp; M Būve · Салацгрива</span></p>
-          <p class="case__craft">Строительство и ремонт полного цикла</p>
-          <p class="case__story">Строительная компания в Салацгриве: частные дома и коммерческие объекты, фасады, крыши, лифтовые шахты. Началось с бесплатной первой версии, теперь это пять страниц на собственном домене с фото и видео работ.</p>
-          <p class="case__links"><a class="btn btn--line" href="https://vmbuve.lv/" target="_blank" rel="noopener">Открыть vmbuve.lv <span aria-hidden="true">↗</span></a></p>
+      </li>
+      <li class="b-case">
+        <div class="b-case__rec"><b>SIA «CONSTRUCTA»</b><span>Рег. № 40103658051</span><span>Рига</span></div>
+        <a class="b-case__phone" href="https://constructa.lv/" target="_blank" rel="noopener"><img class="lz" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="../assets/shots/constructa-m.webp" data-srcset="../assets/shots/constructa-m-320.webp 320w, ../assets/shots/constructa-m.webp 440w, ../assets/shots/constructa-p.webp 720w" sizes="(min-width: 960px) 230px, 72vw" width="440" height="953" alt="CONSTRUCTA: главная страница на телефоне" decoding="async"></a>
+        <div class="b-case__foot">
+          <h3 class="b-case__domain"><a href="https://constructa.lv/" target="_blank" rel="noopener">constructa.lv</a></h3>
+          <p class="b-case__meta"><span class="b-pill b-pill--live"><i aria-hidden="true"></i>работает</span><span>CONSTRUCTA, Рига</span></p>
+          <p class="b-case__craft">Строительство и ремонт</p>
         </div>
-      </article>
-      <article class="case case--flip">
-        <div class="case__media">
-          <div class="win win--d"><div class="bar"><svg class="lock" viewBox="0 0 12 14" aria-hidden="true" focusable="false"><path d="M3.2 6V4.3a2.8 2.8 0 1 1 5.6 0V6h.7c.6 0 1 .4 1 1v5c0 .6-.4 1-1 1h-7c-.6 0-1-.4-1-1V7c0-.6.4-1 1-1h.7Zm1.4 0h2.8V4.3a1.4 1.4 0 1 0-2.8 0V6Z"/></svg><span class="bar__url">constructa.lv</span><span class="state state--live"><i class="dot" aria-hidden="true"></i>работает</span></div><img src="../assets/shots/constructa-d-800.webp" srcset="../assets/shots/constructa-d-800.webp 800w, ../assets/shots/constructa-d.webp 1600w" sizes="(min-width: 1240px) 700px, (min-width: 960px) 56vw, calc(100vw - 32px)" width="800" height="500" alt="CONSTRUCTA: главная страница на ноутбуке" loading="lazy" decoding="async"></div>
-          <div class="case__phone"><img src="../assets/shots/constructa-m-320.webp" width="320" height="693" alt="CONSTRUCTA: главная страница на телефоне" loading="lazy" decoding="async"></div>
+      </li>
+      <li class="b-case">
+        <div class="b-case__rec"><b>I.Į. VENTSISTEMA</b><span>Рег. № 300085772</span><span>Вильнюс · с 2005</span></div>
+        <a class="b-case__phone" href="https://ventsistema.lt/" target="_blank" rel="noopener"><img class="lz" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="../assets/shots/ventsistema-m.webp" data-srcset="../assets/shots/ventsistema-m-320.webp 320w, ../assets/shots/ventsistema-m.webp 440w, ../assets/shots/ventsistema-p.webp 720w" sizes="(min-width: 960px) 230px, 72vw" width="440" height="953" alt="Ventsistema: главная страница на телефоне" decoding="async"></a>
+        <div class="b-case__foot">
+          <h3 class="b-case__domain"><a href="https://ventsistema.lt/" target="_blank" rel="noopener">ventsistema.lt</a></h3>
+          <p class="b-case__meta"><span class="b-pill b-pill--live"><i aria-hidden="true"></i>работает</span><span>Ventsistema, Вильнюс</span></p>
+          <p class="b-case__craft">Вентиляция, рекуперация и кондиционирование</p>
         </div>
-        <div class="case__text">
-          <h3 class="case__domain"><a href="https://constructa.lv/" target="_blank" rel="noopener">constructa.lv</a></h3>
-          <p class="case__who"><span class="state state--live"><i class="dot" aria-hidden="true"></i>работает</span><span>CONSTRUCTA · Рига</span></p>
-          <p class="case__craft">Строительство и ремонт</p>
-          <p class="case__story">Строительная и ремонтная компания в Риге, состоит в реестре строительных компаний: ремонт квартир и домов, внутренняя отделка, полы и ванные комнаты. Началось с первой версии на vasylian.com/constructa, а теперь работает на собственном домене компании, на латышском и русском.</p>
-          <p class="case__links"><a class="btn btn--line" href="https://constructa.lv/" target="_blank" rel="noopener">Открыть constructa.lv <span aria-hidden="true">↗</span></a><span class="case__first">Первая версия: vasylian.com/constructa</span></p>
+      </li>
+      <li class="b-case">
+        <div class="b-case__rec"><b>SOS Evakuators</b><span>Даугавпилс</span></div>
+        <a class="b-case__phone" href="https://autopalidziba.lv/" target="_blank" rel="noopener"><img class="lz" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="../assets/shots/sos-m.webp" data-srcset="../assets/shots/sos-m-320.webp 320w, ../assets/shots/sos-m.webp 440w, ../assets/shots/sos-p.webp 720w" sizes="(min-width: 960px) 230px, 72vw" width="440" height="953" alt="Autopalīdzība.lv: главная страница на телефоне" decoding="async"></a>
+        <div class="b-case__foot">
+          <h3 class="b-case__domain"><a href="https://autopalidziba.lv/" target="_blank" rel="noopener">autopalidziba.lv</a></h3>
+          <p class="b-case__meta"><span class="b-pill b-pill--live"><i aria-hidden="true"></i>работает</span><span>Autopalīdzība.lv, Даугавпилс</span></p>
+          <p class="b-case__craft">Эвакуатор и помощь на дороге 24/7</p>
         </div>
-      </article>
-      <article class="case">
-        <div class="case__media">
-          <div class="win win--d"><div class="bar"><svg class="lock" viewBox="0 0 12 14" aria-hidden="true" focusable="false"><path d="M3.2 6V4.3a2.8 2.8 0 1 1 5.6 0V6h.7c.6 0 1 .4 1 1v5c0 .6-.4 1-1 1h-7c-.6 0-1-.4-1-1V7c0-.6.4-1 1-1h.7Zm1.4 0h2.8V4.3a1.4 1.4 0 1 0-2.8 0V6Z"/></svg><span class="bar__url">ventsistema.lt</span><span class="state state--live"><i class="dot" aria-hidden="true"></i>работает</span></div><img src="../assets/shots/ventsistema-d-800.webp" srcset="../assets/shots/ventsistema-d-800.webp 800w, ../assets/shots/ventsistema-d.webp 1600w" sizes="(min-width: 1240px) 700px, (min-width: 960px) 56vw, calc(100vw - 32px)" width="800" height="500" alt="Ventsistema: главная страница на ноутбуке" loading="lazy" decoding="async"></div>
-          <div class="case__phone"><img src="../assets/shots/ventsistema-m-320.webp" width="320" height="693" alt="Ventsistema: главная страница на телефоне" loading="lazy" decoding="async"></div>
+      </li>
+      <li class="b-case">
+        <div class="b-case__rec"><b>SIA «Elks AK»</b><span>Рег. № 49502002122</span><span>Нитауре · с 1992</span></div>
+        <a class="b-case__phone" href="https://vartupasaule.lv/" target="_blank" rel="noopener"><img class="lz" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="../assets/shots/vartu-m.webp" data-srcset="../assets/shots/vartu-m-320.webp 320w, ../assets/shots/vartu-m.webp 440w, ../assets/shots/vartu-p.webp 720w" sizes="(min-width: 960px) 230px, 72vw" width="440" height="953" alt="Vārtu pasaule: главная страница на телефоне" decoding="async"></a>
+        <div class="b-case__foot">
+          <h3 class="b-case__domain"><a href="https://vartupasaule.lv/" target="_blank" rel="noopener">vartupasaule.lv</a></h3>
+          <p class="b-case__meta"><span class="b-pill b-pill--live"><i aria-hidden="true"></i>работает</span><span>Vārtu pasaule, Нитауре</span></p>
+          <p class="b-case__craft">Ворота, двери, заборы и автоматика</p>
         </div>
-        <div class="case__text">
-          <h3 class="case__domain"><a href="https://ventsistema.lt/" target="_blank" rel="noopener">ventsistema.lt</a></h3>
-          <p class="case__who"><span class="state state--live"><i class="dot" aria-hidden="true"></i>работает</span><span>Ventsistema · Вильнюс</span></p>
-          <p class="case__craft">Вентиляция, рекуперация и кондиционирование</p>
-          <p class="case__story">Вентиляция с рекуперацией в Вильнюсе с 2005 года. Пять страниц на собственном домене: интерактивный 3D-рекуператор, калькулятор воздухообмена, тепловые насосы, бренды оборудования и фото готовых объектов.</p>
-          <p class="case__links"><a class="btn btn--line" href="https://ventsistema.lt/" target="_blank" rel="noopener">Открыть ventsistema.lt <span aria-hidden="true">↗</span></a><span class="case__first">Первая версия: <a href="https://vasylian.com/ventsistema/" target="_blank" rel="noopener">vasylian.com/ventsistema</a></span></p>
-        </div>
-      </article>
-      <article class="case case--flip">
-        <div class="case__media">
-          <div class="win win--d"><div class="bar"><svg class="lock" viewBox="0 0 12 14" aria-hidden="true" focusable="false"><path d="M3.2 6V4.3a2.8 2.8 0 1 1 5.6 0V6h.7c.6 0 1 .4 1 1v5c0 .6-.4 1-1 1h-7c-.6 0-1-.4-1-1V7c0-.6.4-1 1-1h.7Zm1.4 0h2.8V4.3a1.4 1.4 0 1 0-2.8 0V6Z"/></svg><span class="bar__url">autopalidziba.lv</span><span class="state state--live"><i class="dot" aria-hidden="true"></i>работает</span></div><img src="../assets/shots/sos-d-800.webp" srcset="../assets/shots/sos-d-800.webp 800w, ../assets/shots/sos-d.webp 1600w" sizes="(min-width: 1240px) 700px, (min-width: 960px) 56vw, calc(100vw - 32px)" width="800" height="500" alt="Autopalīdzība.lv: главная страница на ноутбуке" loading="lazy" decoding="async"></div>
-          <div class="case__phone"><img src="../assets/shots/sos-m-320.webp" width="320" height="693" alt="Autopalīdzība.lv: главная страница на телефоне" loading="lazy" decoding="async"></div>
-        </div>
-        <div class="case__text">
-          <h3 class="case__domain"><a href="https://autopalidziba.lv/" target="_blank" rel="noopener">autopalidziba.lv</a></h3>
-          <p class="case__who"><span class="state state--live"><i class="dot" aria-hidden="true"></i>работает</span><span>Autopalīdzība.lv · Даугавпилс</span></p>
-          <p class="case__craft">Эвакуатор и помощь на дороге 24/7</p>
-          <p class="case__story">Круглосуточный эвакуатор в Даугавпилсе. Сайт на латышском, русском и английском со своей админкой; для этой же компании есть ещё приложение для вызова эвакуатора и Paceļam, биржа грузов на обратный рейс.</p>
-          <p class="case__links"><a class="btn btn--line" href="https://autopalidziba.lv/" target="_blank" rel="noopener">Открыть autopalidziba.lv <span aria-hidden="true">↗</span></a></p>
-        </div>
-      </article>
-      <article class="case">
-        <div class="case__media">
-          <div class="win win--d"><div class="bar"><svg class="lock" viewBox="0 0 12 14" aria-hidden="true" focusable="false"><path d="M3.2 6V4.3a2.8 2.8 0 1 1 5.6 0V6h.7c.6 0 1 .4 1 1v5c0 .6-.4 1-1 1h-7c-.6 0-1-.4-1-1V7c0-.6.4-1 1-1h.7Zm1.4 0h2.8V4.3a1.4 1.4 0 1 0-2.8 0V6Z"/></svg><span class="bar__url">vartupasaule.lv</span><span class="state state--live"><i class="dot" aria-hidden="true"></i>работает</span></div><img src="../assets/shots/vartu-d-800.webp" srcset="../assets/shots/vartu-d-800.webp 800w, ../assets/shots/vartu-d.webp 1600w" sizes="(min-width: 1240px) 700px, (min-width: 960px) 56vw, calc(100vw - 32px)" width="800" height="500" alt="Vārtu pasaule: главная страница на ноутбуке" loading="lazy" decoding="async"></div>
-          <div class="case__phone"><img src="../assets/shots/vartu-m-320.webp" width="320" height="693" alt="Vārtu pasaule: главная страница на телефоне" loading="lazy" decoding="async"></div>
-        </div>
-        <div class="case__text">
-          <h3 class="case__domain"><a href="https://vartupasaule.lv/" target="_blank" rel="noopener">vartupasaule.lv</a></h3>
-          <p class="case__who"><span class="state state--live"><i class="dot" aria-hidden="true"></i>работает</span><span>Vārtu pasaule · Нитауре</span></p>
-          <p class="case__craft">Ворота, двери, заборы и автоматика</p>
-          <p class="case__story">Производитель ворот и заборов в Видземе. Начиналось с бесплатной первой версии, а стало сайтом на 8 страниц на собственном домене: ворота, двери, заборы и автоматика.</p>
-          <p class="case__links"><a class="btn btn--line" href="https://vartupasaule.lv/" target="_blank" rel="noopener">Открыть vartupasaule.lv <span aria-hidden="true">↗</span></a></p>
-        </div>
-      </article>
-    </div>
-  </div>
-</section>
-
-<section class="sec wall" id="work" aria-labelledby="workH">
-  <div class="wrap">
-    <div class="sec__head">
-      <h2 id="workH">Первые версии для реальных фирм</h2>
-      <p class="lead">Каждая сделана для настоящей компании из её открытых фото и текстов, как бесплатный первый шаг. Все они на vasylian.com: откройте любую на телефоне.</p>
-    </div>
-    <ol class="tiles">
-        <li class="tile"><a href="https://vasylian.com/m-construction/" target="_blank" rel="noopener">
-          <span class="tile__screen"><img src="../assets/shots/mconstruction-m.webp" width="440" height="953" alt="M-CONSTRUCTION: главная страница на телефоне" loading="lazy" decoding="async"></span>
-          <span class="tile__name">M-CONSTRUCTION</span>
-          <span class="tile__meta">Строительство зданий · Рига</span>
-          <span class="tile__url">vasylian.com/<wbr><span class="nw">m-construction</span></span>
-        </a></li>
-        <li class="tile"><a href="https://vasylian.com/lui-beton/" target="_blank" rel="noopener">
-          <span class="tile__screen"><img src="../assets/shots/luibeton-m.webp" width="440" height="953" alt="Lui Beton: главная страница на телефоне" loading="lazy" decoding="async"></span>
-          <span class="tile__name">Lui Beton</span>
-          <span class="tile__meta">Дома, ангары, аренда техники · Демене</span>
-          <span class="tile__url">vasylian.com/<wbr><span class="nw">lui-beton</span></span>
-        </a></li>
-        <li class="tile"><a href="https://vasylian.com/pusdienu-pietura/" target="_blank" rel="noopener">
-          <span class="tile__screen"><img src="../assets/shots/pusdienu-m.webp" width="440" height="953" alt="Pusdienu pietura: главная страница на телефоне" loading="lazy" decoding="async"></span>
-          <span class="tile__name">Pusdienu pietura</span>
-          <span class="tile__meta">Семейное кафе с обедами · Рига</span>
-          <span class="tile__url">vasylian.com/<wbr><span class="nw">pusdienu-pietura</span></span>
-        </a></li>
-        <li class="tile"><a href="https://vasylian.com/thermoheart-ee/" target="_blank" rel="noopener">
-          <span class="tile__screen"><img src="../assets/shots/thermoheart-m.webp" width="440" height="953" alt="ThermoHeart: главная страница на телефоне" loading="lazy" decoding="async"></span>
-          <span class="tile__name">ThermoHeart</span>
-          <span class="tile__meta">Тепловые насосы и отопление · Вяйке-Маарья</span>
-          <span class="tile__url">vasylian.com/<wbr><span class="nw">thermoheart-ee</span></span>
-        </a></li>
-        <li class="tile"><a href="https://vasylian.com/angela-chelmno/" target="_blank" rel="noopener">
-          <span class="tile__screen"><img src="../assets/shots/angela-m.webp" width="440" height="953" alt="ANGELA: главная страница на телефоне" loading="lazy" decoding="async"></span>
-          <span class="tile__name">ANGELA</span>
-          <span class="tile__meta">Автосервис · Хелмно</span>
-          <span class="tile__url">vasylian.com/<wbr><span class="nw">angela-chelmno</span></span>
-        </a></li>
-        <li class="tile"><a href="https://vasylian.com/teplomagia/" target="_blank" rel="noopener">
-          <span class="tile__screen"><img src="../assets/shots/teplomagia-m.webp" width="440" height="953" alt="Тепломагія: главная страница на телефоне" loading="lazy" decoding="async"></span>
-          <span class="tile__name">Тепломагія</span>
-          <span class="tile__meta">Котлы, банные печи, камины · Львов</span>
-          <span class="tile__url">vasylian.com/<wbr><span class="nw">teplomagia</span></span>
-        </a></li>
-        <li class="tile"><a href="https://vasylian.com/ards/" target="_blank" rel="noopener">
-          <span class="tile__screen"><img src="../assets/shots/ards-m.webp" width="440" height="953" alt="ARDS: главная страница на телефоне" loading="lazy" decoding="async"></span>
-          <span class="tile__name">ARDS</span>
-          <span class="tile__meta">Автосервис · Салдус</span>
-          <span class="tile__url">vasylian.com/<wbr><span class="nw">ards</span></span>
-        </a></li>
-        <li class="tile"><a href="https://vasylian.com/grdarbi/" target="_blank" rel="noopener">
-          <span class="tile__screen"><img src="../assets/shots/grdarbi-m.webp" width="440" height="953" alt="GR DARBI: главная страница на телефоне" loading="lazy" decoding="async"></span>
-          <span class="tile__name">GR DARBI</span>
-          <span class="tile__meta">Штукатурка, покраска и отделка · Кулдига</span>
-          <span class="tile__url">vasylian.com/<wbr><span class="nw">grdarbi</span></span>
-        </a></li>
-        <li class="tile"><a href="https://vasylian.com/mebtex-lv/" target="_blank" rel="noopener">
-          <span class="tile__screen"><img src="../assets/shots/mebtex-m.webp" width="440" height="953" alt="MEBTEX: главная страница на телефоне" loading="lazy" decoding="async"></span>
-          <span class="tile__name">MEBTEX</span>
-          <span class="tile__meta">Мебель на заказ · Рига</span>
-          <span class="tile__url">vasylian.com/<wbr><span class="nw">mebtex-lv</span></span>
-        </a></li>
+      </li>
     </ol>
+    <div class="b-nav" data-for="bDeck"><button type="button" class="b-nav__btn" data-dir="-1" aria-label="Предыдущий">←</button><span class="b-nav__count" aria-hidden="true"><b>1</b> / 5</span><button type="button" class="b-nav__btn" data-dir="1" aria-label="Следующий">→</button></div>
   </div>
 </section>
-
-<section class="sec how" id="how" aria-labelledby="howH">
+<section class="b-sec b-first b-dark" id="work" aria-labelledby="workH">
+  <div class="b-wrap">
+    <header class="b-head"><p class="b-kick"><span class="b-kick__n">03</span>Первый шаг</p><h2 id="workH">Первые версии, сделанные до всякой оплаты.</h2><p class="b-lead">Сделаны для реальных фирм по их открытым фото и текстам. Откройте любую на телефоне.</p></header>
+    <ol class="b-rail" id="bRail" aria-label="Первые версии, сделанные до всякой оплаты.">
+      <li class="b-fv"><a href="https://vasylian.com/m-construction/" target="_blank" rel="noopener">
+        <span class="b-fv__screen"><img class="lz" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="../assets/shots/mconstruction-m.webp" data-srcset="../assets/shots/mconstruction-m-320.webp 320w, ../assets/shots/mconstruction-m.webp 440w, ../assets/shots/mconstruction-p.webp 720w" sizes="(min-width: 960px) 232px, 64vw" width="440" height="953" alt="M-CONSTRUCTION: главная страница на телефоне" decoding="async"></span>
+        <span class="b-fv__url">vasylian.com/<b>m-construction</b></span>
+        <span class="b-fv__name">M-CONSTRUCTION</span>
+        <span class="b-fv__meta">Строительство зданий · Рига</span>
+      </a></li>
+      <li class="b-fv"><a href="https://vasylian.com/lui-beton/" target="_blank" rel="noopener">
+        <span class="b-fv__screen"><img class="lz" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="../assets/shots/luibeton-m.webp" data-srcset="../assets/shots/luibeton-m-320.webp 320w, ../assets/shots/luibeton-m.webp 440w, ../assets/shots/luibeton-p.webp 720w" sizes="(min-width: 960px) 232px, 64vw" width="440" height="953" alt="Lui Beton: главная страница на телефоне" decoding="async"></span>
+        <span class="b-fv__url">vasylian.com/<b>lui-beton</b></span>
+        <span class="b-fv__name">Lui Beton</span>
+        <span class="b-fv__meta">Дома, ангары, аренда техники · Демене</span>
+      </a></li>
+      <li class="b-fv"><a href="https://vasylian.com/pusdienu-pietura/" target="_blank" rel="noopener">
+        <span class="b-fv__screen"><img class="lz" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="../assets/shots/pusdienu-m.webp" data-srcset="../assets/shots/pusdienu-m-320.webp 320w, ../assets/shots/pusdienu-m.webp 440w, ../assets/shots/pusdienu-p.webp 720w" sizes="(min-width: 960px) 232px, 64vw" width="440" height="953" alt="Pusdienu pietura: главная страница на телефоне" decoding="async"></span>
+        <span class="b-fv__url">vasylian.com/<b>pusdienu-pietura</b></span>
+        <span class="b-fv__name">Pusdienu pietura</span>
+        <span class="b-fv__meta">Семейное кафе с обедами · Рига</span>
+      </a></li>
+      <li class="b-fv"><a href="https://vasylian.com/thermoheart-ee/" target="_blank" rel="noopener">
+        <span class="b-fv__screen"><img class="lz" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="../assets/shots/thermoheart-m.webp" data-srcset="../assets/shots/thermoheart-m-320.webp 320w, ../assets/shots/thermoheart-m.webp 440w, ../assets/shots/thermoheart-p.webp 720w" sizes="(min-width: 960px) 232px, 64vw" width="440" height="953" alt="ThermoHeart: главная страница на телефоне" decoding="async"></span>
+        <span class="b-fv__url">vasylian.com/<b>thermoheart-ee</b></span>
+        <span class="b-fv__name">ThermoHeart</span>
+        <span class="b-fv__meta">Тепловые насосы и отопление · Вяйке-Маарья</span>
+      </a></li>
+      <li class="b-fv"><a href="https://vasylian.com/angela-chelmno/" target="_blank" rel="noopener">
+        <span class="b-fv__screen"><img class="lz" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="../assets/shots/angela-m.webp" data-srcset="../assets/shots/angela-m-320.webp 320w, ../assets/shots/angela-m.webp 440w, ../assets/shots/angela-p.webp 720w" sizes="(min-width: 960px) 232px, 64vw" width="440" height="953" alt="ANGELA: главная страница на телефоне" decoding="async"></span>
+        <span class="b-fv__url">vasylian.com/<b>angela-chelmno</b></span>
+        <span class="b-fv__name">ANGELA</span>
+        <span class="b-fv__meta">Автосервис · Хелмно</span>
+      </a></li>
+      <li class="b-fv"><a href="https://vasylian.com/teplomagia/" target="_blank" rel="noopener">
+        <span class="b-fv__screen"><img class="lz" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="../assets/shots/teplomagia-m.webp" data-srcset="../assets/shots/teplomagia-m-320.webp 320w, ../assets/shots/teplomagia-m.webp 440w, ../assets/shots/teplomagia-p.webp 720w" sizes="(min-width: 960px) 232px, 64vw" width="440" height="953" alt="Тепломагія: главная страница на телефоне" decoding="async"></span>
+        <span class="b-fv__url">vasylian.com/<b>teplomagia</b></span>
+        <span class="b-fv__name">Тепломагія</span>
+        <span class="b-fv__meta">Котлы, банные печи, камины · Львов</span>
+      </a></li>
+      <li class="b-fv"><a href="https://vasylian.com/ards/" target="_blank" rel="noopener">
+        <span class="b-fv__screen"><img class="lz" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="../assets/shots/ards-m.webp" data-srcset="../assets/shots/ards-m-320.webp 320w, ../assets/shots/ards-m.webp 440w, ../assets/shots/ards-p.webp 720w" sizes="(min-width: 960px) 232px, 64vw" width="440" height="953" alt="ARDS: главная страница на телефоне" decoding="async"></span>
+        <span class="b-fv__url">vasylian.com/<b>ards</b></span>
+        <span class="b-fv__name">ARDS</span>
+        <span class="b-fv__meta">Автосервис · Салдус</span>
+      </a></li>
+      <li class="b-fv"><a href="https://vasylian.com/grdarbi/" target="_blank" rel="noopener">
+        <span class="b-fv__screen"><img class="lz" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="../assets/shots/grdarbi-m.webp" data-srcset="../assets/shots/grdarbi-m-320.webp 320w, ../assets/shots/grdarbi-m.webp 440w, ../assets/shots/grdarbi-p.webp 720w" sizes="(min-width: 960px) 232px, 64vw" width="440" height="953" alt="GR DARBI: главная страница на телефоне" decoding="async"></span>
+        <span class="b-fv__url">vasylian.com/<b>grdarbi</b></span>
+        <span class="b-fv__name">GR DARBI</span>
+        <span class="b-fv__meta">Штукатурка, покраска и отделка · Кулдига</span>
+      </a></li>
+      <li class="b-fv"><a href="https://vasylian.com/mebtex-lv/" target="_blank" rel="noopener">
+        <span class="b-fv__screen"><img class="lz" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="../assets/shots/mebtex-m.webp" data-srcset="../assets/shots/mebtex-m-320.webp 320w, ../assets/shots/mebtex-m.webp 440w, ../assets/shots/mebtex-p.webp 720w" sizes="(min-width: 960px) 232px, 64vw" width="440" height="953" alt="MEBTEX: главная страница на телефоне" decoding="async"></span>
+        <span class="b-fv__url">vasylian.com/<b>mebtex-lv</b></span>
+        <span class="b-fv__name">MEBTEX</span>
+        <span class="b-fv__meta">Мебель на заказ · Рига</span>
+      </a></li>
+    </ol>
+    <div class="b-nav" data-for="bRail"><button type="button" class="b-nav__btn" data-dir="-1" aria-label="Предыдущий">←</button><span class="b-nav__count" aria-hidden="true"><b>1</b> / 9</span><button type="button" class="b-nav__btn" data-dir="1" aria-label="Следующий">→</button></div>
+  </div>
+</section>
+<section class="b-sec b-how" id="how" aria-labelledby="howH">
   <span id="process"></span>
-  <div class="wrap how__grid">
-    <div class="sec__head how__head">
-      <h2 id="howH">Как это работает</h2>
-      <p class="lead">Четыре шага. Всё письменно и на вашем языке.</p>
-    </div>
-    <ol class="steps">
-        <li class="step"><span class="step__n" aria-hidden="true">1</span><div class="step__body"><h3>Вы называете свою фирму</h3><p>Ответьте на моё письмо или напишите мне: название, город и чем занимаетесь. Поможет ссылка на страницу в Facebook, на Google Maps или на старый сайт.</p><div class="bar bar--mail"><svg class="lock" viewBox="0 0 14 11" aria-hidden="true" focusable="false"><path d="M1.5 0h11c.8 0 1.5.7 1.5 1.5v8c0 .8-.7 1.5-1.5 1.5h-11C.7 11 0 10.3 0 9.5v-8C0 .7.7 0 1.5 0Zm.3 1.6L7 5.4l5.2-3.8H1.8Zm10.6 1.3L7.4 6.6a.7.7 0 0 1-.8 0L1.6 2.9v6.5h10.8V2.9Z"/></svg><span class="bar__url">arthur@vasylian.com</span></div></div></li>
-        <li class="step"><span class="step__n" aria-hidden="true">2</span><div class="step__body"><h3>За 24 часа вы получаете ссылку</h3><p>Первая версия вашей главной, сделанная под вашу фирму: название, услуги, фото и контакты. Это бесплатно.</p><div class="bar"><svg class="lock" viewBox="0 0 12 14" aria-hidden="true" focusable="false"><path d="M3.2 6V4.3a2.8 2.8 0 1 1 5.6 0V6h.7c.6 0 1 .4 1 1v5c0 .6-.4 1-1 1h-7c-.6 0-1-.4-1-1V7c0-.6.4-1 1-1h.7Zm1.4 0h2.8V4.3a1.4 1.4 0 1 0-2.8 0V6Z"/></svg><span class="bar__url">vasylian.com/vasha-firma</span><span class="state">бесплатно</span></div></div></li>
-        <li class="step"><span class="step__n" aria-hidden="true">3</span><div class="step__body"><h3>Нравится: сайт выходит на вашем домене</h3><p>Я размещаю сайт на вашем домене и помогаю его подключить. Тексты и фото вы сможете менять сами.</p><div class="bar"><svg class="lock" viewBox="0 0 12 14" aria-hidden="true" focusable="false"><path d="M3.2 6V4.3a2.8 2.8 0 1 1 5.6 0V6h.7c.6 0 1 .4 1 1v5c0 .6-.4 1-1 1h-7c-.6 0-1-.4-1-1V7c0-.6.4-1 1-1h.7Zm1.4 0h2.8V4.3a1.4 1.4 0 1 0-2.8 0V6Z"/></svg><span class="bar__url">vasha-firma.com</span><span class="state state--live"><i class="dot" aria-hidden="true"></i>работает</span></div></div></li>
-        <li class="step"><span class="step__n" aria-hidden="true">4</span><div class="step__body"><h3>Платите один раз, после запуска</h3><p>От 300 €, без абонплаты. Если первая версия не понравилась, вы ничего не платите.</p><div class="bar bar--pay"><span class="bar__url">300 €</span><span class="state">разовая оплата</span></div></div></li>
+  <div class="b-wrap">
+    <header class="b-head"><p class="b-kick"><span class="b-kick__n">04</span>Как это работает</p><h2 id="howH">От записи в каталоге до вашего домена.</h2></header>
+    <ol class="b-steps">
+      <li class="b-step"><span class="b-step__n">01</span><div class="b-step__txt"><h3>Вы есть в каталоге</h3><p>Так я вас нахожу: название, регистрационный номер, город. Часто сайта нет.</p></div><div class="b-step__art"><div class="b-rec b-rec--mini"><p class="b-rec__src">bis.gov.lv · Реестр строительных компаний Латвии</p><dl class="b-rows"><div><dt>Название</dt><dd>Ваша компания</dd></div><div class="is-miss"><dt>Сайт</dt><dd><mark>нет</mark></dd></div></dl></div></div></li>
+      <li class="b-step"><span class="b-step__n">02</span><div class="b-step__txt"><h3>Первая версия за 24 часа</h3><p>Ваша главная на vasylian.com/vasha-firma, сделанная под ваш бизнес. Бесплатно.</p></div><div class="b-step__art"><div class="b-bar b-bar--card"><svg class="lock" viewBox="0 0 12 14" aria-hidden="true" focusable="false"><path d="M3.2 6V4.3a2.8 2.8 0 1 1 5.6 0V6h.7c.6 0 1 .4 1 1v5c0 .6-.4 1-1 1h-7c-.6 0-1-.4-1-1V7c0-.6.4-1 1-1h.7Zm1.4 0h2.8V4.3a1.4 1.4 0 1 0-2.8 0V6Z"/></svg><span class="b-bar__url">vasylian.com/vasha-firma</span></div><span class="b-chip">24 h</span></div></li>
+      <li class="b-step"><span class="b-step__n">03</span><div class="b-step__txt"><h3>Она переезжает на ваш домен</h3><p>Если нравится, сайт выходит на вашем собственном домене. Помогаю его подключить.</p></div><div class="b-step__art"><div class="b-bar b-bar--card"><svg class="lock" viewBox="0 0 12 14" aria-hidden="true" focusable="false"><path d="M3.2 6V4.3a2.8 2.8 0 1 1 5.6 0V6h.7c.6 0 1 .4 1 1v5c0 .6-.4 1-1 1h-7c-.6 0-1-.4-1-1V7c0-.6.4-1 1-1h.7Zm1.4 0h2.8V4.3a1.4 1.4 0 1 0-2.8 0V6Z"/></svg><span class="b-bar__url">vasha-firma.com</span><span class="b-pill b-pill--live"><i aria-hidden="true"></i>работает</span></div></div></li>
+      <li class="b-step"><span class="b-step__n">04</span><div class="b-step__txt"><h3>Платите один раз</h3><p>От 300 €, после запуска. Без абонплаты.</p></div><div class="b-step__art"><div class="b-receipt"><p><span>Оплата один раз, после запуска</span><i></i><b>от 300 €</b></p><p><span>Абонплата</span><i></i><b>0 €</b></p></div></div></li>
     </ol>
   </div>
 </section>
-
-<section class="sec price" id="price" aria-labelledby="priceH">
-  <div class="wrap price__grid">
-    <h2 class="price__fig" id="priceH"><span class="price__from">от</span> <b>300 €</b> <span class="price__once">один раз, без абонплаты</span></h2>
-    <div class="price__body">
-      <p class="lead price__lead">Платите после того, как сайт заработает на вашем домене. Если первая версия не понравилась, вы ничего не платите.</p>
-      <ul class="incl"><li>Бесплатная первая версия главной до всякой оплаты</li><li>Полный сайт до 5 страниц</li><li>Удобный на телефоне и быстрый</li><li>На вашем языке</li><li>Все файлы и исходный код</li><li>Месяц бесплатных правок</li><li>Помощь с доменом и хостингом</li><li>E-mail, WhatsApp, Viber</li><li>Админка: меняйте тексты и фото сами</li></ul>
-      <div class="price__act"><a class="btn" href="#contact">Хочу бесплатную первую версию</a></div>
-      <p class="price__start">Все подробности и форма заказа: <a href="https://vasylian.com/start/en/" hreflang="en">vasylian.com/start/en</a> <span class="muted">(на английском)</span></p>
+<section class="b-sec b-price b-dark" id="price" aria-labelledby="priceH">
+  <div class="b-wrap b-price__grid">
+    <div class="b-price__fig">
+      <p class="b-kick"><span class="b-kick__n">05</span>Цена</p>
+      <h2 id="priceH" class="vh">От 300 €. Один раз, после запуска.</h2>
+      <p class="b-price__num" aria-hidden="true"><span>от</span> 300 €</p>
+      <p class="b-price__once" aria-hidden="true">один раз, без абонплаты</p>
+      <p class="b-lead">Платите после того, как сайт заработает на вашем домене. Если первая версия не понравилась, вы ничего не платите.</p>
+    </div>
+    <div class="b-extract">
+      <p class="b-extract__h">Что входит</p>
+      <ul><li>Бесплатная первая версия главной до всякой оплаты</li><li>Полный сайт до 5 страниц</li><li>Удобный на телефоне и быстрый</li><li>На вашем языке</li><li>Все файлы и исходный код</li><li>Месяц бесплатных правок</li><li>Помощь с доменом и хостингом</li><li>E-mail, WhatsApp, Viber</li><li>Админка: меняйте тексты и фото сами</li></ul>
+      <p class="b-extract__row b-extract__row--tot"><span>Итого</span><b>от 300 €</b></p>
+      <p class="b-extract__row"><span>Абонплата</span><b>0 €</b></p>
+    </div>
+    <div class="b-price__act"><a class="b-btn" href="#contact">Хочу бесплатную первую версию <span aria-hidden="true">→</span></a><p class="b-small">Все подробности и форма заказа: <a href="https://vasylian.com/start/en/" hreflang="en">vasylian.com/start/en</a> <span class="muted">(на английском)</span></p></div>
+  </div>
+</section>
+<section class="b-sec b-admin" id="admin" aria-labelledby="adminH">
+  <div class="b-wrap b-admin__grid">
+    <header class="b-head"><p class="b-kick"><span class="b-kick__n">06</span>После запуска</p><h2 id="adminH">Тексты и фото вы меняете сами</h2><p class="b-lead">К вашему сайту идёт простая админка, которая работает на телефоне. Поменяйте текст или цену, замените фото, нажмите «Сохранить». Программист не нужен.</p></header>
+    <div class="b-admin__phones">
+      <figure><img class="lz" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="../assets/shots/admin-text-m.webp" width="540" height="1169" alt="Админка на телефоне: тексты первого экрана демо-сайта" decoding="async"><figcaption>Правка первого экрана</figcaption></figure>
+      <figure><img class="lz" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-src="../assets/shots/admin-photo-m.webp" width="540" height="1169" alt="Админка на телефоне: замена главного фото демо-сайта" decoding="async"><figcaption>Замена главного фото</figcaption></figure>
+    </div>
+    <div class="b-demo">
+      <p class="b-demo__t">Попробуйте на демо-сайте</p>
+      <div class="b-bar b-bar--card"><svg class="lock" viewBox="0 0 12 14" aria-hidden="true" focusable="false"><path d="M3.2 6V4.3a2.8 2.8 0 1 1 5.6 0V6h.7c.6 0 1 .4 1 1v5c0 .6-.4 1-1 1h-7c-.6 0-1-.4-1-1V7c0-.6.4-1 1-1h.7Zm1.4 0h2.8V4.3a1.4 1.4 0 1 0-2.8 0V6Z"/></svg><span class="b-bar__url">vasylian.com/admin-demo</span></div>
+      <dl class="b-demo__dl"><div><dt>Логин</dt><dd>demo</dd></div><div><dt>Пароль</dt><dd>demo2026</dd></div></dl>
+      <a class="b-btn b-btn--ghost" href="https://vasylian.com/admin-demo/" target="_blank" rel="noopener">Открыть демо админки <span aria-hidden="true">↗</span></a>
     </div>
   </div>
 </section>
-
-<section class="sec admin" id="admin" aria-labelledby="adminH">
-  <div class="wrap admin__grid">
-    <div class="admin__head">
-      <h2 id="adminH">Тексты и фото вы меняете сами</h2>
-      <p class="lead">К вашему сайту идёт простая админка, которая работает на телефоне. Поменяйте текст или цену, замените фото, нажмите «Сохранить». Программист не нужен.</p>
-    </div>
-    <div class="admin__shots">
-      <figure><img src="../assets/shots/admin-text-m.webp" width="540" height="1169" alt="Админка на телефоне: тексты первого экрана демо-сайта" loading="lazy" decoding="async"><figcaption>Правка первого экрана</figcaption></figure>
-      <figure><img src="../assets/shots/admin-photo-m.webp" width="540" height="1169" alt="Админка на телефоне: замена главного фото демо-сайта" loading="lazy" decoding="async"><figcaption>Замена главного фото</figcaption></figure>
-    </div>
-    <div class="demo">
-      <p class="demo__t">Попробуйте на демо-сайте</p>
-      <div class="bar bar--plain"><svg class="lock" viewBox="0 0 12 14" aria-hidden="true" focusable="false"><path d="M3.2 6V4.3a2.8 2.8 0 1 1 5.6 0V6h.7c.6 0 1 .4 1 1v5c0 .6-.4 1-1 1h-7c-.6 0-1-.4-1-1V7c0-.6.4-1 1-1h.7Zm1.4 0h2.8V4.3a1.4 1.4 0 1 0-2.8 0V6Z"/></svg><span class="bar__url">vasylian.com/admin-demo</span></div>
-      <dl class="demo__dl"><div><dt>Логин</dt><dd>demo</dd></div><div><dt>Пароль</dt><dd>demo2026</dd></div></dl>
-      <a class="btn btn--line" href="https://vasylian.com/admin-demo/" target="_blank" rel="noopener">Открыть демо админки <span aria-hidden="true">↗</span></a>
-    </div>
-  </div>
-</section>
-
-<section class="sec about" id="about" aria-labelledby="aboutH">
-  <div class="wrap about__grid">
-    <div>
-      <h2 id="aboutH" class="about__h">Кто делает эти страницы</h2>
-      <p class="about__name">Артур Васильян.</p>
-      <p class="about__aka">Латиницей: Artur Vasilyan или Artur Vasylian, отсюда vasylian.com.</p>
-    </div>
-    <div class="about__text">
-      <p>Дизайнер и разработчик из Киева, Украина. Люблю небольшие компании, где владелец знает каждую работу, и люблю момент, когда сайт наконец показывает то, чем они гордятся.</p>
+<section class="b-sec b-about b-dark" id="about" aria-labelledby="aboutH">
+  <div class="b-wrap b-about__grid">
+    <header class="b-head"><p class="b-kick"><span class="b-kick__n">07</span>Кто делает</p><h2 id="aboutH">Артур Васильян, веб-дизайнер из Киева.</h2></header>
+    <div class="b-rec b-rec--about"><p class="b-rec__src">Обо мне</p><dl class="b-rows"><div><dt>Имя</dt><dd>Артур Васильян (Artur Vasylian)</dd></div><div><dt>Город</dt><dd>Киев, Украина</dd></div><div><dt>Пишу на</dt><dd>LV · LT · EE · PL · DE · UA · RU · EN</dd></div><div><dt>Отвечаю</dt><dd>в течение дня</dd></div><div><dt>На этой странице</dt><dd>14 главных страниц, 5 из них на собственных доменах</dd></div></dl></div>
+    <div class="b-about__text">
+      <p>Люблю небольшие компании, где владелец знает каждую работу, и люблю момент, когда сайт наконец показывает то, чем они гордятся.</p>
       <p>С каждым клиентом переписываюсь на его языке, и каждая страница делается с нуля под одну компанию: без шаблонов, без конструкторов, без того, за что надо платить каждый месяц.</p>
-      <p class="about__risk">Ваш сайт и файлы лежат на хостинге за пределами Украины, так что ничего не зависит от моей электросети.</p>
+      <p class="b-about__risk">Ваш сайт и файлы лежат на хостинге за пределами Украины, так что ничего не зависит от моей электросети.</p>
     </div>
   </div>
 </section>
-
-<section class="sec faq" id="faq" aria-labelledby="faqH">
-  <div class="wrap faq__grid">
-    <h2 id="faqH">О чём владельцы спрашивают первым делом</h2>
-    <div class="faq__list">
-      <details><summary>Почему первая версия бесплатная?</summary><p>Потому что показать быстрее, чем объяснять. Большинство владельцев решают за минуту, когда видят свою фирму на экране телефона.</p></details>
-      <details><summary>Что мне нужно подготовить?</summary><p>Ничего. Фото, услуги и контакты я беру с вашего нынешнего сайта, страницы в Facebook или каталога. Если есть фото получше, пришлёте потом.</p></details>
-      <details><summary>Есть ли ежемесячные платежи?</summary><p>Нет. Вы платите один раз, от 300 €. Домен продлевается у вашего регистратора как обычно, а хостинг для такого сайта может быть бесплатным.</p></details>
-      <details><summary>А если я скажу «нет»?</summary><p>Тогда вы ничего не платите, а первую версию я уберу, если попросите.</p></details>
-      <details><summary>Нужно ли созваниваться?</summary><p>Нет. Всё можно сделать письменно, на вашем языке: по e-mail, в WhatsApp или в Viber.</p></details>
-      <details><summary>Вы в Украине. Это не риск?</summary><p>Ваш сайт и файлы лежат на хостинге за пределами Украины, так что ничего не зависит от моей электросети. И отвечаю я в течение дня.</p></details>
+<section class="b-sec b-faq" id="faq" aria-labelledby="faqH">
+  <div class="b-wrap b-faq__grid">
+    <header class="b-head"><p class="b-kick"><span class="b-kick__n">08</span>Вопросы</p><h2 id="faqH">О чём владельцы спрашивают первым делом</h2></header>
+    <div class="b-faq__list">
+      <details><summary><span class="b-faq__n" aria-hidden="true">01</span><span class="b-faq__q">Почему первая версия бесплатная?</span></summary><p>Потому что показать быстрее, чем объяснять. Большинство владельцев решают за минуту, когда видят свою фирму на экране телефона.</p></details>
+      <details><summary><span class="b-faq__n" aria-hidden="true">02</span><span class="b-faq__q">Что мне нужно подготовить?</span></summary><p>Ничего. Фото, услуги и контакты я беру с вашего нынешнего сайта, страницы в Facebook или каталога. Если есть фото получше, пришлёте потом.</p></details>
+      <details><summary><span class="b-faq__n" aria-hidden="true">03</span><span class="b-faq__q">Есть ли ежемесячные платежи?</span></summary><p>Нет. Вы платите один раз, от 300 €. Домен продлевается у вашего регистратора как обычно, а хостинг для такого сайта может быть бесплатным.</p></details>
+      <details><summary><span class="b-faq__n" aria-hidden="true">04</span><span class="b-faq__q">А если я скажу «нет»?</span></summary><p>Тогда вы ничего не платите, а первую версию я уберу, если попросите.</p></details>
+      <details><summary><span class="b-faq__n" aria-hidden="true">05</span><span class="b-faq__q">Нужно ли созваниваться?</span></summary><p>Нет. Всё можно сделать письменно, на вашем языке: по e-mail, в WhatsApp или в Viber.</p></details>
+      <details><summary><span class="b-faq__n" aria-hidden="true">06</span><span class="b-faq__q">Вы в Украине. Это не риск?</span></summary><p>Ваш сайт и файлы лежат на хостинге за пределами Украины, так что ничего не зависит от моей электросети. И отвечаю я в течение дня.</p></details>
     </div>
   </div>
 </section>
-
-<section class="sec contact" id="contact" aria-labelledby="contactH">
+<section class="b-sec b-contact b-dark" id="contact" aria-labelledby="contactH">
   <span id="start"></span>
-  <div class="wrap contact__grid">
-    <div>
-      <h2 id="contactH">Напишите мне</h2>
-      <p class="lead">На вашем языке. Отвечаю в течение дня. Звонить не нужно: всё можно сделать письменно.</p>
-    </div>
-    <ul class="ways">
-      <li><a href="mailto:arthur@vasylian.com?subject=%D0%91%D0%B5%D1%81%D0%BF%D0%BB%D0%B0%D1%82%D0%BD%D0%B0%D1%8F%20%D0%BF%D0%B5%D1%80%D0%B2%D0%B0%D1%8F%20%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D1%8F%20%D0%BC%D0%BE%D0%B5%D0%B9%20%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D0%BE%D0%B9&amp;body=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%2C%20%D0%90%D1%80%D1%82%D1%83%D1%80!%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B1%D0%B5%D1%81%D0%BF%D0%BB%D0%B0%D1%82%D0%BD%D1%83%D1%8E%20%D0%BF%D0%B5%D1%80%D0%B2%D1%83%D1%8E%20%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D1%8E%20%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D0%BE%D0%B9%20%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D1%8B.%20%D0%9A%D0%BE%D0%BC%D0%BF%D0%B0%D0%BD%D0%B8%D1%8F%3A%20...%20%D0%93%D0%BE%D1%80%D0%BE%D0%B4%3A%20..."><span class="ways__k">E-mail</span><span class="ways__v">arthur@vasylian.com</span><span class="ways__go" aria-hidden="true">→</span></a></li>
-      <li><a href="https://wa.me/380689804255?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%2C%20%D0%90%D1%80%D1%82%D1%83%D1%80!%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B1%D0%B5%D1%81%D0%BF%D0%BB%D0%B0%D1%82%D0%BD%D1%83%D1%8E%20%D0%BF%D0%B5%D1%80%D0%B2%D1%83%D1%8E%20%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D1%8E%20%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D0%BE%D0%B9%20%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D1%8B.%20%D0%9A%D0%BE%D0%BC%D0%BF%D0%B0%D0%BD%D0%B8%D1%8F%3A%20...%20%D0%93%D0%BE%D1%80%D0%BE%D0%B4%3A%20..." target="_blank" rel="noopener"><span class="ways__k">WhatsApp</span><span class="ways__v">+380 68 980 42 55</span><span class="ways__go" aria-hidden="true">→</span></a></li>
-      <li><a href="viber://chat?number=%2B380689804255"><span class="ways__k">Viber</span><span class="ways__v">+380 68 980 42 55</span><span class="ways__go" aria-hidden="true">→</span></a></li>
+  <div class="b-wrap b-contact__grid">
+    <header class="b-head"><p class="b-kick"><span class="b-kick__n">09</span>Старт</p><h2 id="contactH">Сообщение готово. Выберите, куда отправить.</h2><p class="b-lead">Допишите название фирмы и город и отправьте сообщение. Отвечаю в течение дня, на вашем языке. Звонить не нужно.</p></header>
+    <figure class="b-msg">
+      <figcaption class="b-msg__label">Ваше сообщение</figcaption>
+      <p class="b-msg__text" id="bMsg">Здравствуйте, Артур! Хочу бесплатную первую версию главной страницы. Компания: ... Город: ...</p>
+      <button class="b-msg__copy" type="button" id="bCopy" data-done="Скопировано">Скопировать текст</button>
+    </figure>
+    <ul class="b-ways">
+      <li><a class="b-way b-way--wa" href="https://wa.me/380689804255?text=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%2C%20%D0%90%D1%80%D1%82%D1%83%D1%80!%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B1%D0%B5%D1%81%D0%BF%D0%BB%D0%B0%D1%82%D0%BD%D1%83%D1%8E%20%D0%BF%D0%B5%D1%80%D0%B2%D1%83%D1%8E%20%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D1%8E%20%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D0%BE%D0%B9%20%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D1%8B.%20%D0%9A%D0%BE%D0%BC%D0%BF%D0%B0%D0%BD%D0%B8%D1%8F%3A%20...%20%D0%93%D0%BE%D1%80%D0%BE%D0%B4%3A%20..." target="_blank" rel="noopener"><span class="b-way__k">WhatsApp</span><span class="b-way__v">+380 68 980 42 55</span><span class="b-way__go" aria-hidden="true">→</span></a></li>
+      <li><a class="b-way" href="viber://chat?number=%2B380689804255"><span class="b-way__k">Viber</span><span class="b-way__v">+380 68 980 42 55</span><span class="b-way__go" aria-hidden="true">→</span></a></li>
+      <li><a class="b-way" href="mailto:arthur@vasylian.com?subject=%D0%91%D0%B5%D1%81%D0%BF%D0%BB%D0%B0%D1%82%D0%BD%D0%B0%D1%8F%20%D0%BF%D0%B5%D1%80%D0%B2%D0%B0%D1%8F%20%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D1%8F%20%D0%BC%D0%BE%D0%B5%D0%B9%20%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D0%BE%D0%B9&amp;body=%D0%97%D0%B4%D1%80%D0%B0%D0%B2%D1%81%D1%82%D0%B2%D1%83%D0%B9%D1%82%D0%B5%2C%20%D0%90%D1%80%D1%82%D1%83%D1%80!%20%D0%A5%D0%BE%D1%87%D1%83%20%D0%B1%D0%B5%D1%81%D0%BF%D0%BB%D0%B0%D1%82%D0%BD%D1%83%D1%8E%20%D0%BF%D0%B5%D1%80%D0%B2%D1%83%D1%8E%20%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D1%8E%20%D0%B3%D0%BB%D0%B0%D0%B2%D0%BD%D0%BE%D0%B9%20%D1%81%D1%82%D1%80%D0%B0%D0%BD%D0%B8%D1%86%D1%8B.%20%D0%9A%D0%BE%D0%BC%D0%BF%D0%B0%D0%BD%D0%B8%D1%8F%3A%20...%20%D0%93%D0%BE%D1%80%D0%BE%D0%B4%3A%20..."><span class="b-way__k">E-mail</span><span class="b-way__v">arthur@vasylian.com</span><span class="b-way__go" aria-hidden="true">→</span></a></li>
     </ul>
-    <p class="contact__form">Или заполните форму заказа: <a href="https://vasylian.com/start/en/" hreflang="en">vasylian.com/start/en</a> <span class="muted">(на английском)</span></p>
+    <p class="b-small b-contact__form">Или заполните форму заказа: <a href="https://vasylian.com/start/en/" hreflang="en">vasylian.com/start/en</a> <span class="muted">(на английском)</span></p>
   </div>
 </section>
-
 </main>
 
 <footer class="ftr">
@@ -372,6 +304,6 @@
 </footer>
 
 <script id="data" type="application/json">{"lang":"ru","live":"работает","first":"первая версия","pause":"Остановить слайд-шоу","play":"Запустить слайд-шоу"}</script>
-<script src="../assets/js/main.js?v=f84305a0" defer></script>
+<script src="../assets/js/main.js?v=8159861b" defer></script>
 </body>
 </html>

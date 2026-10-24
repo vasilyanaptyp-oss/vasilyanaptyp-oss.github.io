@@ -8,8 +8,12 @@ var store = {
 get: function (k) { try { return localStorage.getItem(k); } catch (e) { return null; } },
 set: function (k, v) { try { localStorage.setItem(k, v); } catch (e) {} }
 };
-var hdr = $('#hdr');
-var onScroll = function () { if (hdr) hdr.classList.toggle('is-scrolled', window.scrollY > 8); };
+var hdr = $('#hdr'), heroSec = $('.hero'), variant = document.documentElement.hasAttribute('data-hero');
+var onScroll = function () {
+if (!hdr) return;
+hdr.classList.toggle('is-scrolled', window.scrollY > 8);
+if (variant && heroSec) hdr.classList.toggle('is-past', heroSec.getBoundingClientRect().bottom < hdr.offsetHeight + 4);
+};
 window.addEventListener('scroll', onScroll, { passive: true }); onScroll();
 var lang = $('#lang');
 if (lang) {
@@ -21,12 +25,32 @@ if (e.key === 'Escape' && lang.open) { lang.open = false; var s = $('summary', l
 $$('a[hreflang]').forEach(function (a) {
 a.addEventListener('click', function () { store.set('lang', a.getAttribute('hreflang')); });
 });
-var strip = $('#strip');
+var strip = $('#strip') || $('[data-cta-watch]');
 if (hdr && strip && 'IntersectionObserver' in window) {
 new IntersectionObserver(function (es) {
 var e = es[0]; hdr.classList.toggle('show-cta', !e.isIntersecting && e.boundingClientRect.top < 0);
 }).observe(strip);
 }
+var lz = $$('img.lz');
+var reveal = function (img) {
+if (img.getAttribute('data-srcset')) { img.setAttribute('srcset', img.getAttribute('data-srcset')); img.removeAttribute('data-srcset'); }
+if (img.getAttribute('data-src')) { img.setAttribute('src', img.getAttribute('data-src')); img.removeAttribute('data-src'); }
+img.classList.remove('lz');
+};
+var lazyStart = function () {
+if ('IntersectionObserver' in window) {
+var lio = new IntersectionObserver(function (es) {
+es.forEach(function (e) { if (e.isIntersecting) { reveal(e.target); lio.unobserve(e.target); } });
+}, { rootMargin: '300px 0px' });
+var rails = $$('.b-deck, .b-rail');
+var rio = new IntersectionObserver(function (es) {
+es.forEach(function (e) { if (e.isIntersecting) { $$('img.lz', e.target).forEach(function (i) { lio.unobserve(i); reveal(i); }); rio.unobserve(e.target); } });
+}, { rootMargin: '300px 0px' });
+rails.forEach(function (r) { rio.observe(r); });
+lz.forEach(function (i) { if (!i.closest('.b-deck, .b-rail')) lio.observe(i); });
+} else lz.forEach(reveal);
+};
+if (document.readyState === 'complete') setTimeout(lazyStart, 300); else window.addEventListener('load', function () { setTimeout(lazyStart, 300); });
 var stage = $('#stage');
 if (!stage) return;
 var slides = $$('.slide', stage), phones = $$('.ph', stage), segs = $$('.seg', stage), list = $$('#heroList button');
@@ -132,4 +156,45 @@ new IntersectionObserver(function (es) { visible = es[0].isIntersecting; schedul
 document.addEventListener('visibilitychange', schedule);
 var boot = function () { load(1); setPlaying(playing); };
 if (document.readyState === 'complete') boot(); else window.addEventListener('load', boot);
+})();
+(function () {
+'use strict';
+var d = document.documentElement;
+var rm = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+var $$ = function (s, r) { return Array.prototype.slice.call((r || document).querySelectorAll(s)); };
+var stage = document.getElementById('bStage');
+if (stage && window.__bRun && d.classList.contains('b-anim')) {
+stage.style.cursor = 'pointer';
+stage.addEventListener('click', function () { window.__bRun(); });
+}
+$$('.b-nav').forEach(function (nav) {
+var list = document.getElementById(nav.getAttribute('data-for'));
+if (!list) return;
+var items = Array.prototype.slice.call(list.children), count = nav.querySelector('.b-nav__count b'), btns = $$('.b-nav__btn', nav);
+var step = function () { return items[1] ? items[1].offsetLeft - items[0].offsetLeft : list.clientWidth; };
+var sync = function () {
+var max = list.scrollWidth - list.clientWidth;
+nav.hidden = max < 8;
+var i = Math.round(list.scrollLeft / Math.max(1, step()));
+if (count) count.textContent = String(Math.min(items.length, Math.max(1, i + 1)));
+if (btns[0]) btns[0].disabled = list.scrollLeft < 4;
+if (btns[1]) btns[1].disabled = list.scrollLeft > max - 4;
+};
+btns.forEach(function (b) {
+b.addEventListener('click', function () { list.scrollBy({ left: step() * Number(b.getAttribute('data-dir')), behavior: rm ? 'auto' : 'smooth' }); });
+});
+var raf = 0;
+list.addEventListener('scroll', function () { cancelAnimationFrame(raf); raf = requestAnimationFrame(sync); }, { passive: true });
+window.addEventListener('resize', sync);
+sync();
+});
+var copy = document.getElementById('bCopy'), msg = document.getElementById('bMsg');
+if (copy && msg && navigator.clipboard && window.isSecureContext) {
+copy.addEventListener('click', function () {
+navigator.clipboard.writeText(msg.textContent).then(function () {
+var was = copy.textContent; copy.textContent = copy.getAttribute('data-done');
+setTimeout(function () { copy.textContent = was; }, 2000);
+});
+});
+} else if (copy) copy.hidden = true;
 })();
