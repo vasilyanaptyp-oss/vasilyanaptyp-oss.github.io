@@ -1,0 +1,43 @@
+# Vasylian: websites for small businesses (Artur Vasilyan)
+
+> Artur Vasilyan (also spelled Vasylian) is a web designer and developer in Kyiv, Ukraine, who makes websites for small
+> businesses in Latvia, Lithuania, Estonia and Poland, mostly construction companies, car services and installers.
+> A free first version of the homepage is ready within 24 hours; the whole site (up to 5 pages) costs from 300 € one-time
+> (Poland: from 1 990 zł), with no monthly fee. Contact: arthur@vasylian.com, WhatsApp +380 68 980 42 55.
+
+## Main pages
+- [English](https://vasylian.com/)
+- [Latviešu](https://vasylian.com/lv/)
+- [Lietuvių](https://vasylian.com/lt/)
+- [Eesti](https://vasylian.com/ee/)
+- [Polski](https://vasylian.com/pl/)
+- [Deutsch](https://vasylian.com/de/)
+- [Українська](https://vasylian.com/ua/)
+- [Русский](https://vasylian.com/ru/)
+
+## Pages by trade and price
+- [Construction company website from 300 € | Artur Vasilyan](https://vasylian.com/websites-for-construction-companies/) (English)
+- [Small business website: 300 € one-time | Artur Vasilyan](https://vasylian.com/website-cost-small-business/) (English)
+- [Mājaslapa būvniecības uzņēmumam no 300 € | Artur Vasilyan](https://vasylian.com/lv/majaslapa-buvniecibas-uznemumam/) (Latvian)
+- [Mājaslapas izveides cena: 300 € vienreiz | Artur Vasilyan](https://vasylian.com/lv/majaslapas-izveide-cena/) (Latvian)
+- [Mājaslapa autoservisam no 300 € | Artur Vasilyan](https://vasylian.com/lv/majaslapa-autoservisam/) (Latvian)
+- [Mājaslapa apkures un ventilācijas firmai | Artur Vasilyan](https://vasylian.com/lv/majaslapa-apkures-un-ventilacijas-firmai/) (Latvian)
+- [Koduleht ehitusettevõttele alates 300 € | Artur Vasilyan](https://vasylian.com/ee/koduleht-ehitusettevottele/) (Estonian)
+- [Kodulehe tegemise hind: 300 € ühekordselt | Artur Vasilyan](https://vasylian.com/ee/kodulehe-tegemine-hind/) (Estonian)
+- [Koduleht autoteenindusele alates 300 € | Artur Vasilyan](https://vasylian.com/ee/koduleht-autoteenindusele/) (Estonian)
+- [Koduleht kütte- ja ventilatsioonifirmale | Artur Vasilyan](https://vasylian.com/ee/koduleht-kute-ja-ventilatsioonifirmale/) (Estonian)
+- [Svetainė statybos įmonei nuo 300 € | Artur Vasilyan](https://vasylian.com/lt/svetaine-statybos-imonei/) (Lithuanian)
+- [Svetainės kūrimo kaina: 300 € vieną kartą | Artur Vasilyan](https://vasylian.com/lt/svetaines-kurimas-kaina/) (Lithuanian)
+- [Svetainė autoservisui nuo 300 € | Artur Vasilyan](https://vasylian.com/lt/svetaine-autoservisui/) (Lithuanian)
+- [Svetainė šildymo ir vėdinimo įmonei | Artur Vasilyan](https://vasylian.com/lt/svetaine-sildymo-ir-vedinimo-imonei/) (Lithuanian)
+- [Strona internetowa dla firmy budowlanej | Artur Vasilyan](https://vasylian.com/pl/strona-internetowa-dla-firmy-budowlanej/) (Polish)
+- [Ile kosztuje strona internetowa dla firmy: od 1 990 zł](https://vasylian.com/pl/ile-kosztuje-strona-internetowa-dla-firmy/) (Polish)
+- [Strona internetowa dla warsztatu samochodowego](https://vasylian.com/pl/strona-internetowa-dla-warsztatu-samochodowego/) (Polish)
+- [Strona internetowa dla firmy instalacyjnej | Artur Vasilyan](https://vasylian.com/pl/strona-internetowa-dla-firmy-instalacyjnej/) (Polish)
+
+## Client sites on their own domains
+- V & M Būve: https://vmbuve.lv/
+- CONSTRUCTA: https://constructa.lv/
+- Ventsistema: https://ventsistema.lt/
+- Autopalīdzība.lv: https://autopalidziba.lv/
+- Vārtu pasaule: https://vartupasaule.lv/
