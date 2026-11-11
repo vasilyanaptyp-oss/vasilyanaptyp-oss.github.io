@@ -159,6 +159,31 @@ if (document.readyState === 'complete') boot(); else window.addEventListener('lo
 })();
 (function () {
 'use strict';
+if (!/[?&](gclid|gbraid|wbraid)=/.test(location.search)) return;
+var ID = 'AW-18554717189', SEND = ID + '/bB3BCOKl0LYdEIWIyo9F';
+window.dataLayer = window.dataLayer || [];
+var gtag = function () { window.dataLayer.push(arguments); };
+window.gtag = gtag;
+gtag('consent', 'default', { ad_storage: 'denied', ad_user_data: 'denied', ad_personalization: 'denied', analytics_storage: 'denied' });
+gtag('set', 'url_passthrough', true);
+gtag('js', new Date());
+gtag('config', ID);
+var s = document.createElement('script');
+s.async = true; s.src = 'https://www.googletagmanager.com/gtag/js?id=' + ID;
+document.head.appendChild(s);
+var sent = false;
+document.addEventListener('click', function (e) {
+var a = e.target && e.target.closest ? e.target.closest('a[href]') : null;
+if (!a || sent) return;
+var h = a.getAttribute('href') || '';
+if (/^(mailto:|tel:|viber:)|wa\.me\/|api\.whatsapp\.com|t\.me\/|vasylian\.com\/start\//.test(h)) {
+sent = true;
+gtag('event', 'conversion', { send_to: SEND, value: 1.0, currency: 'UAH', transport_type: 'beacon' });
+}
+}, true);
+})();
+(function () {
+'use strict';
 var d = document.documentElement;
 var rm = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 var $$ = function (s, r) { return Array.prototype.slice.call((r || document).querySelectorAll(s)); };
